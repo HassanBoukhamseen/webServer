@@ -1,0 +1,1279 @@
+2024-07-13 13:55:19,719 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-13 13:55:19,719 - app.decorators.decorators - INFO - Request: POST /sample_post HTTP/1.1
+Host: 127.0.0.1:8081
+User-Agent: curl/8.6.0
+Accept: */*
+
+
+2024-07-13 13:55:19,719 - app.decorators.decorators - INFO - **************************************************
+2024-07-13 14:05:16,508 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-13 14:05:16,508 - app.decorators.decorators - INFO - Request: (POST /sample_post HTTP/1.1
+Host: 127.0.0.1:8081
+User-Agent: curl/8.6.0
+Accept: */*
+
+, True, 'Request is valid')
+2024-07-13 14:05:16,508 - app.decorators.decorators - INFO - **************************************************
+2024-07-13 14:06:37,375 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-13 14:06:37,375 - app.decorators.decorators - INFO - Request: ('POST /sample_post HTTP/1.1\r\nHost: 127.0.0.1:8081\r\nUser-Agent: curl/8.6.0\r\nAccept: */*\r\n\r\n', True, 'Request is valid')
+2024-07-13 14:06:37,375 - app.decorators.decorators - INFO - **************************************************
+2024-07-13 14:06:54,282 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-13 14:06:54,282 - app.decorators.decorators - INFO - Request: ('GET /needs_auth HTTP/1.1\r\nHost: 127.0.0.1:8081\r\nUser-Agent: curl/8.6.0\r\nAccept: */*\r\nAuthorization: Bearer pwc_is_the_best_of_the_top\r\n\r\n', True, 'Request is valid')
+2024-07-13 14:06:54,282 - app.decorators.decorators - INFO - **************************************************
+2024-07-13 14:07:37,968 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-13 14:07:37,968 - app.decorators.decorators - INFO - Request: ('GET /needs_auth HTTP/1.1\r\nHost: 127.0.0.1:8080\r\nUser-Agent: curl/8.6.0\r\nAccept: */*\r\nAuthorization: Bearer pwc_is_the_best_of_the_top\r\n\r\n', True, 'Request is valid')
+2024-07-13 14:07:37,968 - app.decorators.decorators - INFO - **************************************************
+2024-07-13 15:18:57,413 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-13 15:18:57,413 - app.decorators.decorators - INFO - Request: ('GET /needs_auth HTTP/1.1\r\nHost: 127.0.0.1:8080\r\nUser-Agent: curl/8.6.0\r\nAccept: */*\r\nAuthorization: Bearer pwc_is_the_best_of_the_top\r\n\r\n', True, 'Request is valid')
+2024-07-13 15:18:57,413 - app.decorators.decorators - INFO - **************************************************
+2024-07-13 15:19:28,802 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-13 15:19:28,802 - app.decorators.decorators - INFO - Request: ('GET /needs_auth HTTP/1.1\r\nHost: 127.0.0.1:8081\r\nUser-Agent: curl/8.6.0\r\nAccept: */*\r\nAuthorization: Bearer pwc_is_the_best_of_the_top\r\n\r\n', True, 'Request is valid')
+2024-07-13 15:19:28,802 - app.decorators.decorators - INFO - **************************************************
+2024-07-13 15:19:54,478 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-13 15:19:54,478 - app.decorators.decorators - INFO - Request: ('GET /needs_auth HTTP/1.1\r\nHost: 127.0.0.1:8080\r\nUser-Agent: curl/8.6.0\r\nAccept: */*\r\nAuthorization: Bearer pwc_is_the_best_of_the_top\r\n\r\n', True, 'Request is valid')
+2024-07-13 15:19:54,478 - app.decorators.decorators - INFO - **************************************************
+2024-07-13 15:22:54,850 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-13 15:23:21,164 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-13 15:23:21,165 - app.decorators.decorators - INFO - Request: ('GET /needs_auth HTTP/1.1\r\nHost: 127.0.0.1:8081\r\nUser-Agent: curl/8.6.0\r\nAccept: */*\r\nAuthorization: Bearer pwc_is_the_best_of_the_top\r\n\r\n', True, 'Request is valid')
+2024-07-13 15:23:21,165 - app.decorators.decorators - INFO - **************************************************
+2024-07-13 15:30:34,997 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-13 15:31:29,014 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-13 15:32:13,307 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-13 15:32:47,866 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-13 15:32:47,866 - app.decorators.decorators - INFO - Request: ('GET /needs_auth HTTP/1.1\r\nHost: 127.0.0.1:8080\r\nUser-Agent: curl/8.6.0\r\nAccept: */*\r\nAuthorization: Bearer pwc_is_the_best_of_the_top\r\n\r\n', False, 'Invalid Bearer token')
+2024-07-13 15:32:47,866 - app.decorators.decorators - INFO - **************************************************
+2024-07-13 15:33:01,258 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-13 15:33:01,259 - app.decorators.decorators - INFO - Request: ('GET /needs_auth HTTP/1.1\r\nHost: 127.0.0.1:8080\r\nUser-Agent: curl/8.6.0\r\nAccept: */*\r\nAuthorization: Bearer pwc_is_the_best_of_the_top_4\r\n\r\n', True, 'Authorization is valid')
+2024-07-13 15:33:01,259 - app.decorators.decorators - INFO - **************************************************
+2024-07-13 18:21:22,563 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-13 18:21:22,564 - app.decorators.decorators - INFO - Request: ('GET /sample_get HTTP/1.1\r\nUser-Agent: PostmanRuntime/7.40.0\r\nAccept: */*\r\nPostman-Token: 525f841f-6688-49a6-b84e-ee3cfeaf290b\r\nHost: localhost:8080\r\nAccept-Encoding: gzip, deflate, br\r\nConnection: keep-alive\r\n\r\n', True, 'Request is valid')
+2024-07-13 18:21:22,564 - app.decorators.decorators - INFO - **************************************************
+2024-07-13 18:21:35,446 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-13 18:21:35,447 - app.decorators.decorators - INFO - Request: ('GET /sample_get HTTP/1.1\r\nUser-Agent: PostmanRuntime/7.40.0\r\nAccept: */*\r\nPostman-Token: a67444ba-486e-4066-8d6e-a3a61a486274\r\nHost: localhost:8080\r\nAccept-Encoding: gzip, deflate, br\r\nConnection: keep-alive\r\n\r\n', True, 'Request is valid')
+2024-07-13 18:21:35,447 - app.decorators.decorators - INFO - **************************************************
+2024-07-13 18:21:58,182 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-13 18:21:58,182 - app.decorators.decorators - INFO - Request: ('GET /sample_get HTTP/1.1\r\nUser-Agent: PostmanRuntime/7.40.0\r\nAccept: */*\r\nPostman-Token: 5b4b0451-d292-41a5-96ec-cdc9ac2ab33a\r\nHost: localhost:8080\r\nAccept-Encoding: gzip, deflate, br\r\nConnection: keep-alive\r\n\r\n', True, 'Request is valid')
+2024-07-13 18:21:58,182 - app.decorators.decorators - INFO - **************************************************
+2024-07-13 18:22:23,732 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-13 18:22:23,732 - app.decorators.decorators - INFO - Request: ('GET /sample_get HTTP/1.1\r\nUser-Agent: PostmanRuntime/7.40.0\r\nAccept: */*\r\nPostman-Token: 611ec9fd-59ee-4f52-8469-c60d7303aad5\r\nHost: localhost:8080\r\nAccept-Encoding: gzip, deflate, br\r\nConnection: keep-alive\r\n\r\n', True, 'Request is valid')
+2024-07-13 18:22:23,733 - app.decorators.decorators - INFO - **************************************************
+2024-07-13 18:24:10,547 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-13 18:24:10,547 - app.decorators.decorators - INFO - Request: ('GET /sample_get HTTP/1.1\r\nUser-Agent: PostmanRuntime/7.40.0\r\nAccept: */*\r\nPostman-Token: 21d4efc0-5f14-4de6-aebe-88919f680f76\r\nHost: localhost:8080\r\nAccept-Encoding: gzip, deflate, br\r\nConnection: keep-alive\r\n\r\n', True, 'Request is valid')
+2024-07-13 18:24:10,547 - app.decorators.decorators - INFO - **************************************************
+2024-07-13 18:24:58,500 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-13 18:24:58,501 - app.decorators.decorators - INFO - Request: ('GET /sample_get HTTP/1.1\r\nUser-Agent: PostmanRuntime/7.40.0\r\nAccept: */*\r\nPostman-Token: f9728a27-f1e1-49bd-8c8a-e7030c42e442\r\nHost: localhost:8080\r\nAccept-Encoding: gzip, deflate, br\r\nConnection: keep-alive\r\n\r\n', True, 'Request is valid')
+2024-07-13 18:24:58,501 - app.decorators.decorators - INFO - **************************************************
+2024-07-13 18:26:43,833 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-13 18:26:43,834 - app.decorators.decorators - INFO - Request: ('GET /sample_get HTTP/1.1\r\nUser-Agent: PostmanRuntime/7.40.0\r\nAccept: */*\r\nPostman-Token: a77e14ef-64ec-4095-97b1-030c16ae0363\r\nHost: 127.0.0.1:8080\r\nAccept-Encoding: gzip, deflate, br\r\nConnection: keep-alive\r\n\r\n', True, 'Request is valid')
+2024-07-13 18:26:43,834 - app.decorators.decorators - INFO - **************************************************
+2024-07-13 18:27:02,476 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-13 18:27:02,476 - app.decorators.decorators - INFO - Request: ('GET /sample_get HTTP/1.1\r\nUser-Agent: PostmanRuntime/7.40.0\r\nAccept: */*\r\nPostman-Token: 1d5f3685-7398-48e7-b30a-ede5e059f4c9\r\nHost: 127.0.0.1:8080\r\nAccept-Encoding: gzip, deflate, br\r\nConnection: keep-alive\r\n\r\n', True, 'Request is valid')
+2024-07-13 18:27:02,476 - app.decorators.decorators - INFO - **************************************************
+2024-07-13 18:27:11,049 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-13 18:27:11,051 - app.decorators.decorators - INFO - Request: ('GET /sample_get HTTP/1.1\r\nUser-Agent: PostmanRuntime/7.40.0\r\nAccept: */*\r\nPostman-Token: 855aa7b1-056b-48ab-84a5-1867cdd248e7\r\nHost: localhost:8080\r\nAccept-Encoding: gzip, deflate, br\r\nConnection: keep-alive\r\n\r\n', True, 'Request is valid')
+2024-07-13 18:27:11,051 - app.decorators.decorators - INFO - **************************************************
+2024-07-13 18:30:55,607 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-13 18:30:55,607 - app.decorators.decorators - INFO - Request: ('GET /sample_get HTTP/1.1\r\nHost: 127.0.0.1:8080\r\nUser-Agent: curl/8.6.0\r\nAccept: */*\r\n\r\n', True, 'Request is valid')
+2024-07-13 18:30:55,607 - app.decorators.decorators - INFO - **************************************************
+2024-07-13 18:31:26,116 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-13 18:31:26,116 - app.decorators.decorators - INFO - Request: ('GET /sample_get HTTP/1.1\r\nHost: 127.0.0.1:8080\r\nUser-Agent: curl/8.6.0\r\nAccept: */*\r\n\r\n', True, 'Request is valid')
+2024-07-13 18:31:26,116 - app.decorators.decorators - INFO - **************************************************
+2024-07-13 18:35:03,453 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-13 18:35:03,453 - app.decorators.decorators - INFO - Request: ('GET /sample_get HTTP/1.1\r\nHost: localhost\r\nConnection: close\r\n\r\n', True, 'Request is valid')
+2024-07-13 18:35:03,453 - app.decorators.decorators - INFO - **************************************************
+2024-07-13 18:35:56,877 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-13 18:35:56,877 - app.decorators.decorators - INFO - Request: ('GET /sample_get HTTP/1.1\r\nHost: localhost\r\nConnection: close\r\n\r\n', True, 'Request is valid')
+2024-07-13 18:35:56,877 - app.decorators.decorators - INFO - **************************************************
+2024-07-13 18:37:28,749 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-13 18:37:28,749 - app.decorators.decorators - INFO - Request: ('GET /sample_get HTTP/1.1\r\nHost: localhost\r\nConnection: close\r\n\r\n', True, 'Request is valid')
+2024-07-13 18:37:28,749 - app.decorators.decorators - INFO - **************************************************
+2024-07-13 18:37:55,255 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-13 18:37:55,256 - app.decorators.decorators - INFO - Request: ('GET /needs_auth HTTP/1.1\r\nHost: localhost\r\nConnection: close\r\n\r\n', False, 'Authorization header is missing')
+2024-07-13 18:37:55,256 - app.decorators.decorators - INFO - **************************************************
+2024-07-13 18:37:55,257 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-13 18:37:55,257 - app.decorators.decorators - INFO - Request: ('POST /sample_post HTTP/1.1\r\nHost: localhost\r\nContent-Type: application/json\r\nContent-Length: 16\r\nConnection: close\r\n\r\n{"key": "value"}', True, 'Request is valid')
+2024-07-13 18:37:55,257 - app.decorators.decorators - INFO - **************************************************
+2024-07-13 18:39:17,535 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-13 18:39:17,535 - app.decorators.decorators - INFO - Request: ('GET /sample_get HTTP/1.1\r\nHost: localhost\r\nConnection: close\r\n\r\n', True, 'Request is valid')
+2024-07-13 18:39:17,535 - app.decorators.decorators - INFO - **************************************************
+2024-07-13 18:39:31,393 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-13 18:39:31,393 - app.decorators.decorators - INFO - Request: ('GET /sample_get HTTP/1.1\r\nHost: localhost\r\nConnection: close\r\n\r\n', True, 'Request is valid')
+2024-07-13 18:39:31,393 - app.decorators.decorators - INFO - **************************************************
+2024-07-13 18:39:47,174 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-13 18:39:47,174 - app.decorators.decorators - INFO - Request: ('GET /sample_get HTTP/1.1\r\nHost: localhost\r\nConnection: close\r\n\r\n', True, 'Request is valid')
+2024-07-13 18:39:47,174 - app.decorators.decorators - INFO - **************************************************
+2024-07-13 18:40:13,680 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-13 18:40:13,680 - app.decorators.decorators - INFO - Request: ('GET /needs_auth HTTP/1.1\r\nHost: localhost\r\nConnection: close\r\n\r\n', False, 'Authorization header is missing')
+2024-07-13 18:40:13,680 - app.decorators.decorators - INFO - **************************************************
+2024-07-13 18:40:13,681 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-13 18:40:13,681 - app.decorators.decorators - INFO - Request: ('POST /sample_post HTTP/1.1\r\nHost: localhost\r\nContent-Type: application/json\r\nContent-Length: 16\r\nConnection: close\r\n\r\n{"key": "value"}', True, 'Request is valid')
+2024-07-13 18:40:13,682 - app.decorators.decorators - INFO - **************************************************
+2024-07-13 18:40:32,206 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-13 18:40:32,206 - app.decorators.decorators - INFO - Request: ('GET /sample_get HTTP/1.1\r\nHost: localhost\r\nConnection: close\r\n\r\n', True, 'Request is valid')
+2024-07-13 18:40:32,206 - app.decorators.decorators - INFO - **************************************************
+2024-07-13 18:41:39,757 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-13 18:41:39,757 - app.decorators.decorators - INFO - Request: ('GET /sample_get HTTP/1.1\r\nHost: localhost\r\nConnection: close\r\n\r\n', True, 'Request is valid')
+2024-07-13 18:41:39,758 - app.decorators.decorators - INFO - **************************************************
+2024-07-13 18:42:29,922 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-13 18:42:29,922 - app.decorators.decorators - INFO - Request: ('GET /sample_get HTTP/1.1\r\nHost: localhost\r\nConnection: close\r\n\r\n', True, 'Request is valid')
+2024-07-13 18:42:29,922 - app.decorators.decorators - INFO - **************************************************
+2024-07-13 18:43:02,072 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-13 18:43:02,072 - app.decorators.decorators - INFO - Request: ('GET /sample_get HTTP/1.1\r\nHost: localhost\r\nConnection: close\r\n\r\n', True, 'Request is valid')
+2024-07-13 18:43:02,072 - app.decorators.decorators - INFO - **************************************************
+2024-07-13 18:43:28,584 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-13 18:43:28,584 - app.decorators.decorators - INFO - Request: ('GET /needs_auth HTTP/1.1\r\nHost: localhost\r\nConnection: close\r\n\r\n', False, 'Authorization header is missing')
+2024-07-13 18:43:28,584 - app.decorators.decorators - INFO - **************************************************
+2024-07-13 18:43:28,586 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-13 18:43:28,587 - app.decorators.decorators - INFO - Request: ('POST /sample_post HTTP/1.1\r\nHost: localhost\r\nContent-Type: application/json\r\nContent-Length: 16\r\nConnection: close\r\n\r\n{"key": "value"}', True, 'Request is valid')
+2024-07-13 18:43:28,588 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 09:06:04,966 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 09:06:04,966 - app.decorators.decorators - INFO - Request: ('GET /sample_get HTTP/1.1\r\nHost: 127.0.0.1:8080\r\nUser-Agent: curl/8.6.0\r\nAccept: */*\r\n\r\n', True, 'Request is valid')
+2024-07-14 09:06:04,966 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 09:15:54,386 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 09:18:26,521 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 09:18:26,522 - app.decorators.decorators - INFO - Request: ('GET /sample_get HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', True, 'Request is valid')
+2024-07-14 09:18:26,522 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 09:19:53,766 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 09:23:03,620 - app.decorators.decorators - INFO - Request: ('', False, 'Server only accepts GET and POST requests')
+2024-07-14 09:23:03,620 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 09:23:03,621 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 09:23:03,621 - app.decorators.decorators - INFO - Request: ('GET /sample_get HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', True, 'Request is valid')
+2024-07-14 09:23:03,621 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 09:23:06,592 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 09:23:38,353 - app.decorators.decorators - INFO - Request: ('', False, 'Server only accepts GET and POST requests')
+2024-07-14 09:23:38,353 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 09:23:38,354 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 09:23:38,354 - app.decorators.decorators - INFO - Request: ('GET /sample_get HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', True, 'Request is valid')
+2024-07-14 09:23:38,354 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 09:23:39,185 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 09:24:05,626 - app.decorators.decorators - INFO - Request: ('', False, 'Server only accepts GET and POST requests')
+2024-07-14 09:24:05,626 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 09:24:05,627 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 09:24:05,627 - app.decorators.decorators - INFO - Request: ('', False, 'Server only accepts GET and POST requests')
+2024-07-14 09:24:05,627 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 09:24:05,627 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 09:24:05,628 - app.decorators.decorators - INFO - Request: ('GIBBERISH / HTTP/1.1\r\nHost: {self.HOST}\r\nConnection: close\r\n\r\n', False, 'Server only accepts GET and POST requests')
+2024-07-14 09:24:05,628 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 09:24:13,952 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 09:25:08,113 - app.decorators.decorators - INFO - Request: ('', False, 'Server only accepts GET and POST requests')
+2024-07-14 09:25:08,113 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 09:25:08,113 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 09:25:08,114 - app.decorators.decorators - INFO - Request: ('', False, 'Server only accepts GET and POST requests')
+2024-07-14 09:25:08,115 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 09:25:08,115 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 09:25:08,115 - app.decorators.decorators - INFO - Request: ('POST /sample_post HTTP/1.1\r\nHost: 127.0.0.1\r\nContent-Type: application/json\r\nContent-Length: 16\r\nConnection: close\r\n\r\n{"key": "value"}', True, 'Request is valid')
+2024-07-14 09:25:08,115 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 09:25:17,253 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 09:25:47,498 - app.decorators.decorators - INFO - Request: ('', False, 'Server only accepts GET and POST requests')
+2024-07-14 09:25:47,499 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 09:25:47,499 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 09:25:47,499 - app.decorators.decorators - INFO - Request: ('', False, 'Server only accepts GET and POST requests')
+2024-07-14 09:25:47,499 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 09:25:47,499 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 09:25:47,500 - app.decorators.decorators - INFO - Request: ('POST /sample_post HTTP/1.1\r\nHost: 127.0.0.1\r\nContent-Type: application/json\r\nContent-Length: 16\r\nConnection: close\r\n\r\n{"key": "value"}', True, 'Request is valid')
+2024-07-14 09:25:47,500 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 09:25:52,500 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 09:28:36,654 - app.decorators.decorators - INFO - Request: ('', False, 'Server only accepts GET and POST requests')
+2024-07-14 09:28:36,654 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 09:28:36,655 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 09:28:36,655 - app.decorators.decorators - INFO - Request: ('', False, 'Server only accepts GET and POST requests')
+2024-07-14 09:28:36,655 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 09:28:36,655 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 09:28:36,655 - app.decorators.decorators - INFO - Request: ('POST /sample_post HTTP/1.1\r\nHost: 127.0.0.1\r\nContent-Type: application/json\r\nContent-Length: 16\r\nConnection: close\r\n\r\n{"key": "value"}', True, 'Request is valid')
+2024-07-14 09:28:36,655 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 09:28:37,786 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 09:29:09,785 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 09:29:50,633 - app.decorators.decorators - INFO - Request: ('', False, 'Server only accepts GET and POST requests')
+2024-07-14 09:29:50,634 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 09:29:50,636 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 09:29:50,636 - app.decorators.decorators - INFO - Request: ('', False, 'Server only accepts GET and POST requests')
+2024-07-14 09:29:50,636 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 09:29:50,637 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 09:29:50,637 - app.decorators.decorators - INFO - Request: ('POST /sample_post HTTP/1.1\r\nHost: 127.0.0.1\r\nContent-Type: application/json\r\nContent-Length: 16\r\nConnection: close\r\n\r\n{"key": "value"}', True, 'Request is valid')
+2024-07-14 09:29:50,637 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 09:33:53,724 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 09:33:53,725 - app.decorators.decorators - INFO - Request: ('GET /needs_auth HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\nAuthorization: Basic SGFzc2FuOkFuem9y\r\n\r\n', True, 'Authorization is valid')
+2024-07-14 09:33:53,725 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 09:33:54,838 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 09:33:54,838 - app.decorators.decorators - INFO - Request: ('GET /sample_get HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', True, 'Request is valid')
+2024-07-14 09:33:54,838 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 09:33:55,042 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 09:33:55,042 - app.decorators.decorators - INFO - Request: ('GET /needs_auth HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\nAuthorization: Basic WrongAuth\r\n\r\n', False, 'Error in Basic authentication: Invalid base64-encoded string: number of data characters (9) cannot be 1 more than a multiple of 4')
+2024-07-14 09:33:55,042 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 09:33:55,044 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 09:33:55,044 - app.decorators.decorators - INFO - Request: ('GIBBERISH / HTTP/1.1\r\nHost: {self.HOST}\r\nConnection: close\r\n\r\n', False, 'Server only accepts GET and POST requests')
+2024-07-14 09:33:55,044 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 09:33:55,045 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 09:33:55,045 - app.decorators.decorators - INFO - Request: ('POST /sample_post HTTP/1.1\r\nHost: 127.0.0.1\r\nContent-Type: application/json\r\nContent-Length: 16\r\nConnection: close\r\n\r\n{"key": "value"}', True, 'Request is valid')
+2024-07-14 09:33:55,045 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 09:34:45,993 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 09:34:45,994 - app.decorators.decorators - INFO - Request: ('GET /needs_auth HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\nAuthorization: Basic SGFzc2FuOkFuem9y\r\n\r\n', True, 'Authorization is valid')
+2024-07-14 09:34:45,994 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 09:34:47,107 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 09:34:47,107 - app.decorators.decorators - INFO - Request: ('GET /sample_get HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', True, 'Request is valid')
+2024-07-14 09:34:47,108 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 09:34:47,310 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 09:34:47,311 - app.decorators.decorators - INFO - Request: ('GET /needs_auth HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\nAuthorization: Basic WrongAuth\r\n\r\n', False, 'Error in Basic authentication: Invalid base64-encoded string: number of data characters (9) cannot be 1 more than a multiple of 4')
+2024-07-14 09:34:47,311 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 09:34:47,312 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 09:34:47,312 - app.decorators.decorators - INFO - Request: ('GIBBERISH / HTTP/1.1\r\nHost: {self.HOST}\r\nConnection: close\r\n\r\n', False, 'Server only accepts GET and POST requests')
+2024-07-14 09:34:47,312 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 09:34:47,313 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 09:34:47,313 - app.decorators.decorators - INFO - Request: ('POST /sample_post HTTP/1.1\r\nHost: 127.0.0.1\r\nContent-Type: application/json\r\nContent-Length: 16\r\nConnection: close\r\n\r\n{"key": "value"}', True, 'Request is valid')
+2024-07-14 09:34:47,313 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 09:36:04,273 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 09:36:04,274 - app.decorators.decorators - INFO - Request: ('GET /needs_auth HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\nAuthorization: Basic SGFzc2FuOkFuem9y\r\n\r\n', True, 'Authorization is valid')
+2024-07-14 09:36:04,274 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 09:36:05,389 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 09:36:05,389 - app.decorators.decorators - INFO - Request: ('GET /sample_get HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', True, 'Request is valid')
+2024-07-14 09:36:05,390 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 09:36:05,592 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 09:36:05,592 - app.decorators.decorators - INFO - Request: ('GET /needs_auth HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\nAuthorization: Basic WrongAuth\r\n\r\n', False, 'Error in Basic authentication: Invalid base64-encoded string: number of data characters (9) cannot be 1 more than a multiple of 4')
+2024-07-14 09:36:05,592 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 09:36:05,593 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 09:36:05,593 - app.decorators.decorators - INFO - Request: ('GIBBERISH / HTTP/1.1\r\nHost: {self.HOST}\r\nConnection: close\r\n\r\n', False, 'Server only accepts GET and POST requests')
+2024-07-14 09:36:05,593 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 09:36:05,594 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 09:36:05,594 - app.decorators.decorators - INFO - Request: ('POST /sample_post HTTP/1.1\r\nHost: 127.0.0.1\r\nContent-Type: application/json\r\nContent-Length: 16\r\nConnection: close\r\n\r\n{"key": "value"}', True, 'Request is valid')
+2024-07-14 09:36:05,594 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 09:36:06,201 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 09:36:06,202 - app.decorators.decorators - INFO - Request: ('GET /sample_get HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', True, 'Request is valid')
+2024-07-14 09:36:06,202 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 09:36:06,405 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 09:36:06,405 - app.decorators.decorators - INFO - Request: ('GET /sample_get HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', True, 'Request is valid')
+2024-07-14 09:36:06,405 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 09:36:06,608 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 09:36:06,608 - app.decorators.decorators - INFO - Request: ('GET /sample_get HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', True, 'Request is valid')
+2024-07-14 09:36:06,608 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 09:36:06,811 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 09:36:06,812 - app.decorators.decorators - INFO - Request: ('GET /sample_get HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', True, 'Request is valid')
+2024-07-14 09:36:06,817 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 09:36:07,021 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 09:36:07,021 - app.decorators.decorators - INFO - Request: ('GET /sample_get HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', True, 'Request is valid')
+2024-07-14 09:36:07,022 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 09:36:07,225 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 09:36:07,225 - app.decorators.decorators - INFO - Request: ('GET /sample_get HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', True, 'Request is valid')
+2024-07-14 09:36:07,225 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 09:36:07,428 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 09:36:07,428 - app.decorators.decorators - INFO - Request: ('GET /sample_get HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', True, 'Request is valid')
+2024-07-14 09:36:07,428 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 09:36:07,631 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 09:36:07,631 - app.decorators.decorators - INFO - Request: ('GET /sample_get HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', True, 'Request is valid')
+2024-07-14 09:36:07,631 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 09:36:07,834 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 09:36:07,834 - app.decorators.decorators - INFO - Request: ('GET /sample_get HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', True, 'Request is valid')
+2024-07-14 09:36:07,834 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 09:36:08,038 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 09:36:08,039 - app.decorators.decorators - INFO - Request: ('GET /sample_get HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', True, 'Request is valid')
+2024-07-14 09:36:08,039 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 09:38:55,090 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 09:38:55,090 - app.decorators.decorators - INFO - Request: ('GET /needs_auth HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\nAuthorization: Basic SGFzc2FuOkFuem9y\r\n\r\n', True, 'Authorization is valid')
+2024-07-14 09:38:55,090 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 09:38:56,204 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 09:38:56,204 - app.decorators.decorators - INFO - Request: ('GET /sample_get HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', True, 'Request is valid')
+2024-07-14 09:38:56,204 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 09:38:56,406 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 09:38:56,406 - app.decorators.decorators - INFO - Request: ('GET /needs_auth HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\nAuthorization: QmFzaWMgV3JvbmdBdXRo\r\n\r\n', False, 'Unsupported Authorization type')
+2024-07-14 09:38:56,406 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 09:38:56,408 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 09:38:56,408 - app.decorators.decorators - INFO - Request: ('GIBBERISH / HTTP/1.1\r\nHost: {self.HOST}\r\nConnection: close\r\n\r\n', False, 'Server only accepts GET and POST requests')
+2024-07-14 09:38:56,408 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 09:38:56,409 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 09:38:56,409 - app.decorators.decorators - INFO - Request: ('POST /sample_post HTTP/1.1\r\nHost: 127.0.0.1\r\nContent-Type: application/json\r\nContent-Length: 16\r\nConnection: close\r\n\r\n{"key": "value"}', True, 'Request is valid')
+2024-07-14 09:38:56,409 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 09:38:57,016 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 09:38:57,016 - app.decorators.decorators - INFO - Request: ('GET /sample_post HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', False, 'Route not found')
+2024-07-14 09:38:57,016 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 09:38:57,121 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 09:38:57,121 - app.decorators.decorators - INFO - Request: ('GET /sample_post HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', False, 'Route not found')
+2024-07-14 09:38:57,121 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 09:38:57,226 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 09:38:57,226 - app.decorators.decorators - INFO - Request: ('GET /sample_post HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', False, 'Route not found')
+2024-07-14 09:38:57,226 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 09:38:57,332 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 09:38:57,333 - app.decorators.decorators - INFO - Request: ('GET /sample_post HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', False, 'Route not found')
+2024-07-14 09:38:57,333 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 09:38:57,438 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 09:38:57,438 - app.decorators.decorators - INFO - Request: ('GET /sample_post HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', False, 'Route not found')
+2024-07-14 09:38:57,439 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 09:38:57,545 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 09:38:57,545 - app.decorators.decorators - INFO - Request: ('GET /sample_post HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', False, 'Route not found')
+2024-07-14 09:38:57,545 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 09:38:57,648 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 09:38:57,649 - app.decorators.decorators - INFO - Request: ('GET /sample_post HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', False, 'Route not found')
+2024-07-14 09:38:57,649 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 09:38:57,756 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 09:38:57,756 - app.decorators.decorators - INFO - Request: ('GET /sample_post HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', False, 'Route not found')
+2024-07-14 09:38:57,756 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 09:38:57,863 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 09:38:57,863 - app.decorators.decorators - INFO - Request: ('GET /sample_post HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', False, 'Route not found')
+2024-07-14 09:38:57,863 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 09:38:57,970 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 09:38:57,970 - app.decorators.decorators - INFO - Request: ('GET /sample_post HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', False, 'Route not found')
+2024-07-14 09:38:57,970 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 09:39:46,733 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 09:39:46,733 - app.decorators.decorators - INFO - Request: ('GET /needs_auth HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\nAuthorization: Basic SGFzc2FuOkFuem9y\r\n\r\n', True, 'Authorization is valid')
+2024-07-14 09:39:46,734 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 09:39:47,847 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 09:39:47,848 - app.decorators.decorators - INFO - Request: ('GET /sample_get HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', True, 'Request is valid')
+2024-07-14 09:39:47,848 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 09:39:48,052 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 09:39:48,052 - app.decorators.decorators - INFO - Request: ('GET /needs_auth HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\nAuthorization: Basic V3JvbmdBdXRo\r\n\r\n', False, 'Error in Basic authentication: not enough values to unpack (expected 2, got 1)')
+2024-07-14 09:39:48,052 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 09:39:48,054 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 09:39:48,054 - app.decorators.decorators - INFO - Request: ('GIBBERISH / HTTP/1.1\r\nHost: {self.HOST}\r\nConnection: close\r\n\r\n', False, 'Server only accepts GET and POST requests')
+2024-07-14 09:39:48,054 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 09:39:48,055 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 09:39:48,055 - app.decorators.decorators - INFO - Request: ('POST /sample_post HTTP/1.1\r\nHost: 127.0.0.1\r\nContent-Type: application/json\r\nContent-Length: 16\r\nConnection: close\r\n\r\n{"key": "value"}', True, 'Request is valid')
+2024-07-14 09:39:48,056 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 09:39:48,663 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 09:39:48,663 - app.decorators.decorators - INFO - Request: ('GET /sample_post HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', False, 'Route not found')
+2024-07-14 09:39:48,663 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 09:39:48,770 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 09:39:48,770 - app.decorators.decorators - INFO - Request: ('GET /sample_post HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', False, 'Route not found')
+2024-07-14 09:39:48,770 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 09:39:48,876 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 09:39:48,877 - app.decorators.decorators - INFO - Request: ('GET /sample_post HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', False, 'Route not found')
+2024-07-14 09:39:48,877 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 09:39:48,980 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 09:39:48,981 - app.decorators.decorators - INFO - Request: ('GET /sample_post HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', False, 'Route not found')
+2024-07-14 09:39:48,981 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 09:39:49,084 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 09:39:49,085 - app.decorators.decorators - INFO - Request: ('GET /sample_post HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', False, 'Route not found')
+2024-07-14 09:39:49,085 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 09:39:49,191 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 09:39:49,192 - app.decorators.decorators - INFO - Request: ('GET /sample_post HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', False, 'Route not found')
+2024-07-14 09:39:49,192 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 09:39:49,296 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 09:39:49,297 - app.decorators.decorators - INFO - Request: ('GET /sample_post HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', False, 'Route not found')
+2024-07-14 09:39:49,297 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 09:39:49,403 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 09:39:49,404 - app.decorators.decorators - INFO - Request: ('GET /sample_post HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', False, 'Route not found')
+2024-07-14 09:39:49,404 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 09:39:49,506 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 09:39:49,506 - app.decorators.decorators - INFO - Request: ('GET /sample_post HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', False, 'Route not found')
+2024-07-14 09:39:49,506 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 09:39:49,613 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 09:39:49,614 - app.decorators.decorators - INFO - Request: ('GET /sample_post HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', False, 'Route not found')
+2024-07-14 09:39:49,614 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 09:40:26,826 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 09:40:26,826 - app.decorators.decorators - INFO - Request: ('GET /needs_auth HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\nAuthorization: Basic SGFzc2FuOkFuem9y\r\n\r\n', True, 'Authorization is valid')
+2024-07-14 09:40:26,826 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 09:40:27,939 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 09:40:27,940 - app.decorators.decorators - INFO - Request: ('GET /sample_get HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', True, 'Request is valid')
+2024-07-14 09:40:27,940 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 09:40:28,144 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 09:40:28,145 - app.decorators.decorators - INFO - Request: ('GET /needs_auth HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\nAuthorization: Basic V3Jvbmc6QXV0aA==\r\n\r\n', False, 'Invalid Basic authentication credentials')
+2024-07-14 09:40:28,145 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 09:40:28,147 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 09:40:28,147 - app.decorators.decorators - INFO - Request: ('GIBBERISH / HTTP/1.1\r\nHost: {self.HOST}\r\nConnection: close\r\n\r\n', False, 'Server only accepts GET and POST requests')
+2024-07-14 09:40:28,147 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 09:40:28,148 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 09:40:28,148 - app.decorators.decorators - INFO - Request: ('POST /sample_post HTTP/1.1\r\nHost: 127.0.0.1\r\nContent-Type: application/json\r\nContent-Length: 16\r\nConnection: close\r\n\r\n{"key": "value"}', True, 'Request is valid')
+2024-07-14 09:40:28,148 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 09:40:28,757 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 09:40:28,757 - app.decorators.decorators - INFO - Request: ('GET /sample_post HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', False, 'Route not found')
+2024-07-14 09:40:28,757 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 09:40:28,862 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 09:40:28,862 - app.decorators.decorators - INFO - Request: ('GET /sample_post HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', False, 'Route not found')
+2024-07-14 09:40:28,862 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 09:40:28,968 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 09:40:28,968 - app.decorators.decorators - INFO - Request: ('GET /sample_post HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', False, 'Route not found')
+2024-07-14 09:40:28,969 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 09:40:29,070 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 09:40:29,071 - app.decorators.decorators - INFO - Request: ('GET /sample_post HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', False, 'Route not found')
+2024-07-14 09:40:29,071 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 09:40:29,174 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 09:40:29,174 - app.decorators.decorators - INFO - Request: ('GET /sample_post HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', False, 'Route not found')
+2024-07-14 09:40:29,174 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 09:40:29,281 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 09:40:29,281 - app.decorators.decorators - INFO - Request: ('GET /sample_post HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', False, 'Route not found')
+2024-07-14 09:40:29,282 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 09:40:29,387 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 09:40:29,388 - app.decorators.decorators - INFO - Request: ('GET /sample_post HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', False, 'Route not found')
+2024-07-14 09:40:29,388 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 09:40:29,492 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 09:40:29,493 - app.decorators.decorators - INFO - Request: ('GET /sample_post HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', False, 'Route not found')
+2024-07-14 09:40:29,493 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 09:40:29,599 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 09:40:29,600 - app.decorators.decorators - INFO - Request: ('GET /sample_post HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', False, 'Route not found')
+2024-07-14 09:40:29,600 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 09:40:29,707 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 09:40:29,707 - app.decorators.decorators - INFO - Request: ('GET /sample_post HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', False, 'Route not found')
+2024-07-14 09:40:29,707 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 09:42:37,642 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 09:42:37,642 - app.decorators.decorators - INFO - Request: ('GET /needs_auth HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\nAuthorization: Basic SGFzc2FuOkFuem9y\r\n\r\n', True, 'Authorization is valid')
+2024-07-14 09:42:37,642 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 09:42:38,757 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 09:42:38,757 - app.decorators.decorators - INFO - Request: ('GET /sample_get HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', True, 'Request is valid')
+2024-07-14 09:42:38,758 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 09:42:38,961 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 09:42:38,962 - app.decorators.decorators - INFO - Request: ('GET /needs_auth HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\nAuthorization: Basic V3Jvbmc6QXV0aA==\r\n\r\n', False, 'Invalid Basic authentication credentials')
+2024-07-14 09:42:38,962 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 09:42:38,964 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 09:42:38,964 - app.decorators.decorators - INFO - Request: ('GIBBERISH / HTTP/1.1\r\nHost: {self.HOST}\r\nConnection: close\r\n\r\n', False, 'Server only accepts GET and POST requests')
+2024-07-14 09:42:38,964 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 09:42:38,966 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 09:42:38,966 - app.decorators.decorators - INFO - Request: ('POST /sample_post HTTP/1.1\r\nHost: 127.0.0.1\r\nContent-Type: application/json\r\nContent-Length: 16\r\nConnection: close\r\n\r\n{"key": "value"}', True, 'Request is valid')
+2024-07-14 09:42:38,966 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 09:42:39,574 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 09:42:39,574 - app.decorators.decorators - INFO - Request: ('GET /sample_post HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', False, 'Route not found')
+2024-07-14 09:42:39,574 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 09:42:39,681 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 09:42:39,682 - app.decorators.decorators - INFO - Request: ('GET /sample_post HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', False, 'Route not found')
+2024-07-14 09:42:39,682 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 09:42:39,784 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 09:42:39,785 - app.decorators.decorators - INFO - Request: ('GET /sample_post HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', False, 'Route not found')
+2024-07-14 09:42:39,785 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 09:42:39,887 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 09:42:39,887 - app.decorators.decorators - INFO - Request: ('GET /sample_post HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', False, 'Route not found')
+2024-07-14 09:42:39,888 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 09:42:39,990 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 09:42:39,991 - app.decorators.decorators - INFO - Request: ('GET /sample_post HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', False, 'Route not found')
+2024-07-14 09:42:39,991 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 09:42:40,098 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 09:42:40,099 - app.decorators.decorators - INFO - Request: ('GET /sample_post HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', False, 'Route not found')
+2024-07-14 09:42:40,099 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 09:42:40,206 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 09:42:40,207 - app.decorators.decorators - INFO - Request: ('GET /sample_post HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', False, 'Route not found')
+2024-07-14 09:42:40,207 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 09:42:40,310 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 09:42:40,310 - app.decorators.decorators - INFO - Request: ('GET /sample_post HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', False, 'Route not found')
+2024-07-14 09:42:40,310 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 09:42:40,416 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 09:42:40,416 - app.decorators.decorators - INFO - Request: ('GET /sample_post HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', False, 'Route not found')
+2024-07-14 09:42:40,416 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 09:42:40,523 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 09:42:40,523 - app.decorators.decorators - INFO - Request: ('GET /sample_post HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', False, 'Route not found')
+2024-07-14 09:42:40,524 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 09:45:46,403 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 09:45:46,403 - app.decorators.decorators - INFO - Request: ('GET /needs_auth HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\nAuthorization: Basic SGFzc2FuOkFuem9y\r\n\r\n', True, 'Authorization is valid')
+2024-07-14 09:45:46,403 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 09:45:47,517 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 09:45:47,517 - app.decorators.decorators - INFO - Request: ('GET /sample_get HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', True, 'Request is valid')
+2024-07-14 09:45:47,517 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 09:45:47,721 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 09:45:47,721 - app.decorators.decorators - INFO - Request: ('GET /needs_auth HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\nAuthorization: Basic V3Jvbmc6QXV0aA==\r\n\r\n', False, 'Authorization Error: Invalid Basic authentication credentials')
+2024-07-14 09:45:47,722 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 09:45:47,723 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 09:45:47,723 - app.decorators.decorators - INFO - Request: ('GIBBERISH / HTTP/1.1\r\nHost: {self.HOST}\r\nConnection: close\r\n\r\n', False, 'Server only accepts GET and POST requests')
+2024-07-14 09:45:47,723 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 09:45:47,724 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 09:45:47,724 - app.decorators.decorators - INFO - Request: ('POST /sample_post HTTP/1.1\r\nHost: 127.0.0.1\r\nContent-Type: application/json\r\nContent-Length: 16\r\nConnection: close\r\n\r\n{"key": "value"}', True, 'Request is valid')
+2024-07-14 09:45:47,724 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 09:45:48,332 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 09:45:48,332 - app.decorators.decorators - INFO - Request: ('GET /sample_post HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', False, 'Route not found')
+2024-07-14 09:45:48,332 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 09:45:48,434 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 09:45:48,435 - app.decorators.decorators - INFO - Request: ('GET /sample_post HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', False, 'Route not found')
+2024-07-14 09:45:48,435 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 09:45:48,542 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 09:45:48,542 - app.decorators.decorators - INFO - Request: ('GET /sample_post HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', False, 'Route not found')
+2024-07-14 09:45:48,542 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 09:45:48,648 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 09:45:48,648 - app.decorators.decorators - INFO - Request: ('GET /sample_post HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', False, 'Route not found')
+2024-07-14 09:45:48,648 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 09:45:48,754 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 09:45:48,755 - app.decorators.decorators - INFO - Request: ('GET /sample_post HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', False, 'Route not found')
+2024-07-14 09:45:48,755 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 09:45:48,861 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 09:45:48,862 - app.decorators.decorators - INFO - Request: ('GET /sample_post HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', False, 'Route not found')
+2024-07-14 09:45:48,862 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 09:45:48,966 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 09:45:48,966 - app.decorators.decorators - INFO - Request: ('GET /sample_post HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', False, 'Route not found')
+2024-07-14 09:45:48,966 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 09:45:49,070 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 09:45:49,071 - app.decorators.decorators - INFO - Request: ('GET /sample_post HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', False, 'Route not found')
+2024-07-14 09:45:49,071 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 09:45:49,178 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 09:45:49,179 - app.decorators.decorators - INFO - Request: ('GET /sample_post HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', False, 'Route not found')
+2024-07-14 09:45:49,179 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 09:45:49,286 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 09:45:49,287 - app.decorators.decorators - INFO - Request: ('GET /sample_post HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', False, 'Route not found')
+2024-07-14 09:45:49,287 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 09:49:03,772 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 09:49:03,772 - app.decorators.decorators - INFO - Request: ('GET /needs_auth HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\nAuthorization: Basic SGFzc2FuOkFuem9y\r\n\r\n', True, 'Authorization is valid')
+2024-07-14 09:49:03,773 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 09:49:04,886 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 09:49:04,886 - app.decorators.decorators - INFO - Request: ('GET /sample_get HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', True, 'Request is valid')
+2024-07-14 09:49:04,886 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 09:49:05,091 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 09:49:05,091 - app.decorators.decorators - INFO - Request: ('GET /needs_auth HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\nAuthorization: Basic V3Jvbmc6QXV0aA==\r\n\r\n', False, 'Authorization Error: Invalid Basic authentication credentials')
+2024-07-14 09:49:05,091 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 09:49:05,093 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 09:49:05,093 - app.decorators.decorators - INFO - Request: ('GIBBERISH / HTTP/1.1\r\nHost: {self.HOST}\r\nConnection: close\r\n\r\n', False, 'Server only accepts GET and POST requests')
+2024-07-14 09:49:05,093 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 09:49:05,094 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 09:49:05,095 - app.decorators.decorators - INFO - Request: ('POST /sample_post HTTP/1.1\r\nHost: 127.0.0.1\r\nContent-Type: application/json\r\nContent-Length: 16\r\nConnection: close\r\n\r\n{"key": "value"}', True, 'Request is valid')
+2024-07-14 09:49:05,095 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 09:49:05,703 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 09:49:05,703 - app.decorators.decorators - INFO - Request: ('GET /sample_get HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', True, 'Request is valid')
+2024-07-14 09:49:05,704 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 09:49:43,384 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 09:49:43,384 - app.decorators.decorators - INFO - Request: ('GET /needs_auth HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\nAuthorization: Basic SGFzc2FuOkFuem9y\r\n\r\n', True, 'Authorization is valid')
+2024-07-14 09:49:43,384 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 09:49:44,495 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 09:49:44,495 - app.decorators.decorators - INFO - Request: ('GET /sample_get HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', True, 'Request is valid')
+2024-07-14 09:49:44,495 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 09:49:44,698 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 09:49:44,699 - app.decorators.decorators - INFO - Request: ('GET /needs_auth HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\nAuthorization: Basic V3Jvbmc6QXV0aA==\r\n\r\n', False, 'Authorization Error: Invalid Basic authentication credentials')
+2024-07-14 09:49:44,699 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 09:49:44,700 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 09:49:44,700 - app.decorators.decorators - INFO - Request: ('GIBBERISH / HTTP/1.1\r\nHost: {self.HOST}\r\nConnection: close\r\n\r\n', False, 'Server only accepts GET and POST requests')
+2024-07-14 09:49:44,700 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 09:49:44,700 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 09:49:44,700 - app.decorators.decorators - INFO - Request: ('POST /sample_post HTTP/1.1\r\nHost: 127.0.0.1\r\nContent-Type: application/json\r\nContent-Length: 16\r\nConnection: close\r\n\r\n{"key": "value"}', True, 'Request is valid')
+2024-07-14 09:49:44,700 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 09:49:45,308 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 09:49:45,308 - app.decorators.decorators - INFO - Request: ('GET /sample_get HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', True, 'Request is valid')
+2024-07-14 09:49:45,308 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 09:51:08,641 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 09:51:08,641 - app.decorators.decorators - INFO - Request: ('GET /needs_auth HTTP/1.1\r\nHost: 127.0.0.1:8081\r\nUser-Agent: curl/8.6.0\r\nAccept: */*\r\n\r\n', False, 'Authorization Error: Authorization header is missing')
+2024-07-14 09:51:08,641 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 09:51:36,317 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 09:51:36,317 - app.decorators.decorators - INFO - Request: ('GET /needs_auth HTTP/1.1\r\nHost: 127.0.0.1:8081\r\nUser-Agent: curl/8.6.0\r\nAccept: */*\r\n\r\n', False, 'Authorization Error: Authorization header is missing')
+2024-07-14 09:51:36,317 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 09:52:14,639 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 09:52:14,639 - app.decorators.decorators - INFO - Request: ('GET /needs_auth HTTP/1.1\r\nHost: 127.0.0.1:8080\r\nUser-Agent: curl/8.6.0\r\nAccept: */*\r\n\r\n', False, 'Authorization Error: Authorization header is missing')
+2024-07-14 09:52:14,639 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 09:53:12,315 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 09:53:12,315 - app.decorators.decorators - INFO - Request: ('GET /needs_auth HTTP/1.1\r\nHost: 127.0.0.1:8080\r\nUser-Agent: curl/8.6.0\r\nAccept: */*\r\nAuthorization: Bearer pwc_is_the_best_of_the_top\r\n\r\n', False, 'Authorization Error: Invalid Bearer token')
+2024-07-14 09:53:12,315 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 09:55:09,836 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 09:55:09,836 - app.decorators.decorators - INFO - Request: ('GET /needs_auth HTTP/1.1\r\nHost: 127.0.0.1:8080\r\nUser-Agent: curl/8.6.0\r\nAccept: */*\r\nAuthorization: Basic Hassan:Anzor\r\n\r\n', False, 'Authorization Error: Error in Basic authentication: Incorrect padding')
+2024-07-14 09:55:09,836 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 09:55:16,408 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 09:55:16,408 - app.decorators.decorators - INFO - Request: ('GET /needs_auth HTTP/1.1\r\nHost: 127.0.0.1:8080\r\nUser-Agent: curl/8.6.0\r\nAccept: */*\r\nAuthorization: Basic Hassan:Anzor \r\n\r\n', False, 'Authorization Error: Error in Basic authentication: Incorrect padding')
+2024-07-14 09:55:16,408 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 09:55:24,880 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 09:55:37,608 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 09:55:50,433 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 09:55:54,440 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 09:56:05,283 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 09:56:05,283 - app.decorators.decorators - INFO - Request: ('GET /needs_auth HTTP/1.1\r\nHost: 127.0.0.1:8080\r\nUser-Agent: curl/8.6.0\r\nAccept: */*\r\nAuthorization: Basic Hassan:Anzor\r\n\r\n', False, 'Authorization Error: Error in Basic authentication: Incorrect padding')
+2024-07-14 09:56:05,283 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 09:57:48,210 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 09:57:48,210 - app.decorators.decorators - INFO - Request: ('GET /needs_auth HTTP/1.1\r\nHost: 127.0.0.1:8080\r\nAuthorization: Basic SGFzc2FuOkFuem9y\r\nUser-Agent: curl/8.6.0\r\nAccept: */*\r\n\r\n', True, 'Authorization is valid')
+2024-07-14 09:57:48,210 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 09:58:42,905 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 09:58:42,905 - app.decorators.decorators - INFO - Request: ('GET /needs_auth HTTP/1.1\r\nHost: 127.0.0.1:8080\r\nUser-Agent: curl/8.6.0\r\nAccept: */*\r\nAuthorization: Basic SGFzc2FuOkFuem9y\r\n\r\n', True, 'Authorization is valid')
+2024-07-14 09:58:42,905 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 10:00:15,416 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 10:00:15,416 - app.decorators.decorators - INFO - Request: ('GET /needs_auth HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\nAuthorization: Basic SGFzc2FuOkFuem9y\r\n\r\n', True, 'Authorization is valid')
+2024-07-14 10:00:15,417 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 10:00:16,529 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 10:00:16,529 - app.decorators.decorators - INFO - Request: ('GET /sample_get HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', True, 'Request is valid')
+2024-07-14 10:00:16,529 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 10:00:16,733 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 10:00:16,733 - app.decorators.decorators - INFO - Request: ('GET /needs_auth HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\nAuthorization: Basic V3Jvbmc6QXV0aA==\r\n\r\n', False, 'Authorization Error: Invalid Basic authentication credentials')
+2024-07-14 10:00:16,733 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 10:00:16,735 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 10:00:16,735 - app.decorators.decorators - INFO - Request: ('GIBBERISH / HTTP/1.1\r\nHost: {self.HOST}\r\nConnection: close\r\n\r\n', False, 'Server only accepts GET and POST requests')
+2024-07-14 10:00:16,735 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 10:00:16,736 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 10:00:16,737 - app.decorators.decorators - INFO - Request: ('POST /sample_post HTTP/1.1\r\nHost: 127.0.0.1\r\nContent-Type: application/json\r\nContent-Length: 16\r\nConnection: close\r\n\r\n{"key": "value"}', True, 'Request is valid')
+2024-07-14 10:00:16,737 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 10:00:17,344 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 10:00:17,344 - app.decorators.decorators - INFO - Request: ('GET /sample_get HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', True, 'Request is valid')
+2024-07-14 10:00:17,344 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 11:24:54,689 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 11:24:54,689 - app.decorators.decorators - INFO - Request: ('GET /needs_auth HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\nAuthorization: Basic SGFzc2FuOkFuem9y\r\n\r\n', True, 'Authorization is valid')
+2024-07-14 11:24:54,689 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 11:24:55,802 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 11:24:55,803 - app.decorators.decorators - INFO - Request: ('GET /sample_get HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', True, 'Request is valid')
+2024-07-14 11:24:55,803 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 11:24:56,006 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 11:24:56,006 - app.decorators.decorators - INFO - Request: ('GET /needs_auth HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\nAuthorization: Basic V3Jvbmc6QXV0aA==\r\n\r\n', False, 'Authorization Error: Invalid Basic authentication credentials')
+2024-07-14 11:24:56,006 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 11:24:56,007 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 11:24:56,008 - app.decorators.decorators - INFO - Request: ('GIBBERISH / HTTP/1.1\r\nHost: {self.HOST}\r\nConnection: close\r\n\r\n', False, 'Server only accepts GET and POST requests')
+2024-07-14 11:24:56,008 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 11:24:56,008 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 11:24:56,008 - app.decorators.decorators - INFO - Request: ('POST /sample_post HTTP/1.1\r\nHost: 127.0.0.1\r\nContent-Type: application/json\r\nContent-Length: 16\r\nConnection: close\r\n\r\n{"key": "value"}', True, 'Request is valid')
+2024-07-14 11:24:56,008 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 11:24:56,616 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 11:24:56,616 - app.decorators.decorators - INFO - Request: ('GET /sample_get HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', True, 'Request is valid')
+2024-07-14 11:24:56,616 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 11:26:47,886 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 11:26:47,886 - app.decorators.decorators - INFO - Request: ('GET /needs_auth HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\nAuthorization: Basic SGFzc2FuOkFuem9y\r\n\r\n', True, 'Authorization is valid')
+2024-07-14 11:26:47,886 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 11:26:48,998 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 11:26:48,998 - app.decorators.decorators - INFO - Request: ('GET /sample_get HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', True, 'Request is valid')
+2024-07-14 11:26:48,998 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 11:26:49,201 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 11:26:49,201 - app.decorators.decorators - INFO - Request: ('GET /needs_auth HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\nAuthorization: Basic V3Jvbmc6QXV0aA==\r\n\r\n', False, 'Authorization Error: Invalid Basic authentication credentials')
+2024-07-14 11:26:49,201 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 11:26:49,202 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 11:26:49,202 - app.decorators.decorators - INFO - Request: ('GIBBERISH / HTTP/1.1\r\nHost: {self.HOST}\r\nConnection: close\r\n\r\n', False, 'Server only accepts GET and POST requests')
+2024-07-14 11:26:49,202 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 11:26:49,203 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 11:26:49,203 - app.decorators.decorators - INFO - Request: ('POST /sample_post HTTP/1.1\r\nHost: 127.0.0.1\r\nContent-Type: application/json\r\nContent-Length: 16\r\nConnection: close\r\n\r\n{"key": "value"}', True, 'Request is valid')
+2024-07-14 11:26:49,203 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 11:26:49,811 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 11:26:49,811 - app.decorators.decorators - INFO - Request: ('GET /sample_get HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', True, 'Request is valid')
+2024-07-14 11:26:49,811 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 11:27:34,328 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 11:27:34,328 - app.decorators.decorators - INFO - Request: ('GET /needs_auth HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\nAuthorization: Basic SGFzc2FuOkFuem9y\r\n\r\n', True, 'Authorization is valid')
+2024-07-14 11:27:34,328 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 11:27:35,440 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 11:27:35,440 - app.decorators.decorators - INFO - Request: ('GET /sample_get HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', True, 'Request is valid')
+2024-07-14 11:27:35,440 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 11:27:35,645 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 11:27:35,645 - app.decorators.decorators - INFO - Request: ('GET /needs_auth HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\nAuthorization: Basic V3Jvbmc6QXV0aA==\r\n\r\n', False, 'Authorization Error: Invalid Basic authentication credentials')
+2024-07-14 11:27:35,645 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 11:27:35,647 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 11:27:35,647 - app.decorators.decorators - INFO - Request: ('GIBBERISH / HTTP/1.1\r\nHost: {self.HOST}\r\nConnection: close\r\n\r\n', False, 'Server only accepts GET and POST requests')
+2024-07-14 11:27:35,647 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 11:27:35,648 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 11:27:35,648 - app.decorators.decorators - INFO - Request: ('POST /sample_post HTTP/1.1\r\nHost: 127.0.0.1\r\nContent-Type: application/json\r\nContent-Length: 16\r\nConnection: close\r\n\r\n{"key": "value"}', True, 'Request is valid')
+2024-07-14 11:27:35,648 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 11:27:36,256 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 11:27:36,256 - app.decorators.decorators - INFO - Request: ('GET /sample_get HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', True, 'Request is valid')
+2024-07-14 11:27:36,256 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 11:37:57,734 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 11:37:57,734 - app.decorators.decorators - INFO - Request: ('GET /needs_auth HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\nAuthorization: Basic SGFzc2FuOkFuem9y\r\n\r\n', True, 'Authorization is valid')
+2024-07-14 11:37:57,734 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 11:37:57,735 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 11:37:57,735 - app.decorators.decorators - INFO - Request: ('GET /sample_get HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', True, 'Request is valid')
+2024-07-14 11:37:57,735 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 11:37:57,939 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 11:37:57,939 - app.decorators.decorators - INFO - Request: ('GET /needs_auth HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\nAuthorization: Basic V3Jvbmc6QXV0aA==\r\n\r\n', False, 'Authorization Error: Invalid Basic authentication credentials')
+2024-07-14 11:37:57,940 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 11:37:57,941 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 11:37:57,941 - app.decorators.decorators - INFO - Request: ('GIBBERISH / HTTP/1.1\r\nHost: {self.HOST}\r\nConnection: close\r\n\r\n', False, 'Server only accepts GET and POST requests')
+2024-07-14 11:37:57,941 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 11:37:57,942 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 11:37:57,942 - app.decorators.decorators - INFO - Request: ('POST /sample_post HTTP/1.1\r\nHost: 127.0.0.1\r\nContent-Type: application/json\r\nContent-Length: 16\r\nConnection: close\r\n\r\n{"key": "value"}', True, 'Request is valid')
+2024-07-14 11:37:57,942 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 11:37:58,551 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 11:37:58,551 - app.decorators.decorators - INFO - Request: ('GET /sample_get HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', True, 'Request is valid')
+2024-07-14 11:37:58,551 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 11:38:15,248 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 11:38:15,248 - app.decorators.decorators - INFO - Request: ('GET /needs_auth HTTP/1.1\r\nHost: 127.0.0.1:8080\r\nUser-Agent: curl/8.6.0\r\nAccept: */*\r\nAuthorization: Basic SGFzc2FuOkFuem9y\r\n\r\n', True, 'Authorization is valid')
+2024-07-14 11:38:15,248 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 11:38:52,090 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 11:38:52,090 - app.decorators.decorators - INFO - Request: ('GET /needs_auth HTTP/1.1\r\nHost: 127.0.0.1:8080\r\nUser-Agent: curl/8.6.0\r\nAccept: */*\r\nAuthorization: Basic SGFzc2FuOkFuem9y\r\n\r\n', True, 'Authorization is valid')
+2024-07-14 11:38:52,090 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 11:38:58,840 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 11:38:58,840 - app.decorators.decorators - INFO - Request: ('GET /needs_auth HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\nAuthorization: Basic SGFzc2FuOkFuem9y\r\n\r\n', True, 'Authorization is valid')
+2024-07-14 11:38:58,840 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 11:38:58,840 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 11:38:58,840 - app.decorators.decorators - INFO - Request: ('GET /sample_get HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', True, 'Request is valid')
+2024-07-14 11:38:58,840 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 11:38:59,043 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 11:38:59,044 - app.decorators.decorators - INFO - Request: ('GET /needs_auth HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\nAuthorization: Basic V3Jvbmc6QXV0aA==\r\n\r\n', False, 'Authorization Error: Invalid Basic authentication credentials')
+2024-07-14 11:38:59,044 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 11:38:59,045 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 11:38:59,045 - app.decorators.decorators - INFO - Request: ('GIBBERISH / HTTP/1.1\r\nHost: {self.HOST}\r\nConnection: close\r\n\r\n', False, 'Server only accepts GET and POST requests')
+2024-07-14 11:38:59,045 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 11:38:59,045 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 11:38:59,046 - app.decorators.decorators - INFO - Request: ('POST /sample_post HTTP/1.1\r\nHost: 127.0.0.1\r\nContent-Type: application/json\r\nContent-Length: 16\r\nConnection: close\r\n\r\n{"key": "value"}', True, 'Request is valid')
+2024-07-14 11:38:59,046 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 11:38:59,654 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 11:38:59,654 - app.decorators.decorators - INFO - Request: ('GET /sample_get HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', True, 'Request is valid')
+2024-07-14 11:38:59,654 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 11:39:28,777 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 11:39:28,777 - app.decorators.decorators - INFO - Request: ('GET /needs_auth HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\nAuthorization: Basic SGFzc2FuOkFuem9y\r\n\r\n', True, 'Authorization is valid')
+2024-07-14 11:39:28,777 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 11:39:28,778 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 11:39:28,778 - app.decorators.decorators - INFO - Request: ('GET /sample_get HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', True, 'Request is valid')
+2024-07-14 11:39:28,778 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 11:39:28,982 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 11:39:28,982 - app.decorators.decorators - INFO - Request: ('GET /needs_auth HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\nAuthorization: Basic V3Jvbmc6QXV0aA==\r\n\r\n', False, 'Authorization Error: Invalid Basic authentication credentials')
+2024-07-14 11:39:28,982 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 11:39:28,984 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 11:39:28,984 - app.decorators.decorators - INFO - Request: ('GIBBERISH / HTTP/1.1\r\nHost: {self.HOST}\r\nConnection: close\r\n\r\n', False, 'Server only accepts GET and POST requests')
+2024-07-14 11:39:28,984 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 11:39:28,985 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 11:39:28,985 - app.decorators.decorators - INFO - Request: ('POST /sample_post HTTP/1.1\r\nHost: 127.0.0.1\r\nContent-Type: application/json\r\nContent-Length: 16\r\nConnection: close\r\n\r\n{"key": "value"}', True, 'Request is valid')
+2024-07-14 11:39:28,985 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 11:39:29,594 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 11:39:29,594 - app.decorators.decorators - INFO - Request: ('GET /sample_get HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', True, 'Request is valid')
+2024-07-14 11:39:29,595 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 11:40:41,121 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 11:40:41,121 - app.decorators.decorators - INFO - Request: ('GET /needs_auth HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\nAuthorization: Basic SGFzc2FuOkFuem9y\r\n\r\n', True, 'Authorization is valid')
+2024-07-14 11:40:41,121 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 11:40:41,121 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 11:40:41,121 - app.decorators.decorators - INFO - Request: ('GET /sample_get HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', True, 'Request is valid')
+2024-07-14 11:40:41,121 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 11:40:41,325 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 11:40:41,325 - app.decorators.decorators - INFO - Request: ('GET /needs_auth HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\nAuthorization: Basic V3Jvbmc6QXV0aA==\r\n\r\n', False, 'Authorization Error: Invalid Basic authentication credentials')
+2024-07-14 11:40:41,325 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 11:40:41,326 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 11:40:41,327 - app.decorators.decorators - INFO - Request: ('GIBBERISH / HTTP/1.1\r\nHost: {self.HOST}\r\nConnection: close\r\n\r\n', False, 'Server only accepts GET and POST requests')
+2024-07-14 11:40:41,327 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 11:40:41,327 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 11:40:41,327 - app.decorators.decorators - INFO - Request: ('POST /sample_post HTTP/1.1\r\nHost: 127.0.0.1\r\nContent-Type: application/json\r\nContent-Length: 16\r\nConnection: close\r\n\r\n{"key": "value"}', True, 'Request is valid')
+2024-07-14 11:40:41,327 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 11:40:41,934 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 11:40:41,934 - app.decorators.decorators - INFO - Request: ('GET /sample_get HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', True, 'Request is valid')
+2024-07-14 11:40:41,934 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 11:41:28,262 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 11:41:28,263 - app.decorators.decorators - INFO - Request: ('GET /needs_auth HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\nAuthorization: Basic SGFzc2FuOkFuem9y\r\n\r\n', True, 'Authorization is valid')
+2024-07-14 11:41:28,263 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 11:41:28,263 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 11:41:28,263 - app.decorators.decorators - INFO - Request: ('GET /sample_get HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', True, 'Request is valid')
+2024-07-14 11:41:28,263 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 11:41:28,467 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 11:41:28,468 - app.decorators.decorators - INFO - Request: ('GET /needs_auth HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\nAuthorization: Basic V3Jvbmc6QXV0aA==\r\n\r\n', False, 'Authorization Error: Invalid Basic authentication credentials')
+2024-07-14 11:41:28,468 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 11:41:28,470 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 11:41:28,470 - app.decorators.decorators - INFO - Request: ('GIBBERISH / HTTP/1.1\r\nHost: {self.HOST}\r\nConnection: close\r\n\r\n', False, 'Server only accepts GET and POST requests')
+2024-07-14 11:41:28,470 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 11:41:28,471 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 11:41:28,472 - app.decorators.decorators - INFO - Request: ('POST /sample_post HTTP/1.1\r\nHost: 127.0.0.1\r\nContent-Type: application/json\r\nContent-Length: 16\r\nConnection: close\r\n\r\n{"key": "value"}', True, 'Request is valid')
+2024-07-14 11:41:28,472 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 11:41:28,473 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 11:41:28,473 - app.decorators.decorators - INFO - Request: ('GET /sample_get HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', True, 'Request is valid')
+2024-07-14 11:41:28,473 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 11:43:13,197 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 11:43:13,197 - app.decorators.decorators - INFO - Request: ('GET /needs_auth HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\nAuthorization: Basic SGFzc2FuOkFuem9y\r\n\r\n', True, 'Authorization is valid')
+2024-07-14 11:43:13,197 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 11:43:13,197 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 11:43:13,197 - app.decorators.decorators - INFO - Request: ('GET /sample_get HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', True, 'Request is valid')
+2024-07-14 11:43:13,197 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 11:43:13,399 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 11:43:13,399 - app.decorators.decorators - INFO - Request: ('GET /needs_auth HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\nAuthorization: Basic V3Jvbmc6QXV0aA==\r\n\r\n', False, 'Authorization Error: Invalid Basic authentication credentials')
+2024-07-14 11:43:13,399 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 11:43:13,400 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 11:43:13,400 - app.decorators.decorators - INFO - Request: ('GIBBERISH / HTTP/1.1\r\nHost: {self.HOST}\r\nConnection: close\r\n\r\n', False, 'Server only accepts GET and POST requests')
+2024-07-14 11:43:13,400 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 11:43:13,400 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 11:43:13,400 - app.decorators.decorators - INFO - Request: ('POST /sample_post HTTP/1.1\r\nHost: 127.0.0.1\r\nContent-Type: application/json\r\nContent-Length: 16\r\nConnection: close\r\n\r\n{"key": "value"}', True, 'Request is valid')
+2024-07-14 11:43:13,401 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 11:43:13,401 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 11:43:13,401 - app.decorators.decorators - INFO - Request: ('GET /sample_get HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', True, 'Request is valid')
+2024-07-14 11:43:13,401 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 11:43:39,197 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 11:43:39,198 - app.decorators.decorators - INFO - Request: ('GET /needs_auth HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\nAuthorization: Basic SGFzc2FuOkFuem9y\r\n\r\n', True, 'Authorization is valid')
+2024-07-14 11:43:39,198 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 11:43:39,198 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 11:43:39,198 - app.decorators.decorators - INFO - Request: ('GET /sample_get HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', True, 'Request is valid')
+2024-07-14 11:43:39,198 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 11:43:39,401 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 11:43:39,401 - app.decorators.decorators - INFO - Request: ('GET /needs_auth HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\nAuthorization: Basic V3Jvbmc6QXV0aA==\r\n\r\n', False, 'Authorization Error: Invalid Basic authentication credentials')
+2024-07-14 11:43:39,401 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 11:43:39,402 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 11:43:39,402 - app.decorators.decorators - INFO - Request: ('GIBBERISH / HTTP/1.1\r\nHost: {self.HOST}\r\nConnection: close\r\n\r\n', False, 'Server only accepts GET and POST requests')
+2024-07-14 11:43:39,402 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 11:43:39,403 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 11:43:39,403 - app.decorators.decorators - INFO - Request: ('POST /sample_post HTTP/1.1\r\nHost: 127.0.0.1\r\nContent-Type: application/json\r\nContent-Length: 16\r\nConnection: close\r\n\r\n{"key": "value"}', True, 'Request is valid')
+2024-07-14 11:43:39,403 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 11:43:39,404 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 11:43:39,404 - app.decorators.decorators - INFO - Request: ('GET /sample_get HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', True, 'Request is valid')
+2024-07-14 11:43:39,404 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 11:43:52,117 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 11:43:52,118 - app.decorators.decorators - INFO - Request: ('GET /needs_auth HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\nAuthorization: Basic SGFzc2FuOkFuem9y\r\n\r\n', True, 'Authorization is valid')
+2024-07-14 11:43:52,118 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 11:43:52,118 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 11:43:52,118 - app.decorators.decorators - INFO - Request: ('GET /sample_get HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', True, 'Request is valid')
+2024-07-14 11:43:52,118 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 11:43:52,321 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 11:43:52,322 - app.decorators.decorators - INFO - Request: ('GET /needs_auth HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\nAuthorization: Basic V3Jvbmc6QXV0aA==\r\n\r\n', False, 'Authorization Error: Invalid Basic authentication credentials')
+2024-07-14 11:43:52,322 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 11:44:08,621 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 11:44:08,621 - app.decorators.decorators - INFO - Request: ('GET /needs_auth HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\nAuthorization: Basic SGFzc2FuOkFuem9y\r\n\r\n', True, 'Authorization is valid')
+2024-07-14 11:44:08,621 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 11:44:08,622 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 11:44:08,622 - app.decorators.decorators - INFO - Request: ('GET /sample_get HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', True, 'Request is valid')
+2024-07-14 11:44:08,622 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 11:44:08,825 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 11:44:08,826 - app.decorators.decorators - INFO - Request: ('GET /needs_auth HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\nAuthorization: Basic V3Jvbmc6QXV0aA==\r\n\r\n', False, 'Authorization Error: Invalid Basic authentication credentials')
+2024-07-14 11:44:08,826 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 11:44:08,828 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 11:44:08,828 - app.decorators.decorators - INFO - Request: ('GIBBERISH / HTTP/1.1\r\nHost: {self.HOST}\r\nConnection: close\r\n\r\n', False, 'Server only accepts GET and POST requests')
+2024-07-14 11:44:08,828 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 11:44:08,829 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 11:44:08,829 - app.decorators.decorators - INFO - Request: ('POST /sample_post HTTP/1.1\r\nHost: 127.0.0.1\r\nContent-Type: application/json\r\nContent-Length: 16\r\nConnection: close\r\n\r\n{"key": "value"}', True, 'Request is valid')
+2024-07-14 11:44:08,830 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 11:44:08,830 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 11:44:08,831 - app.decorators.decorators - INFO - Request: ('GET /sample_get HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', True, 'Request is valid')
+2024-07-14 11:44:08,831 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 11:45:10,282 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 11:45:10,282 - app.decorators.decorators - INFO - Request: ('GET /needs_auth HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\nAuthorization: Basic SGFzc2FuOkFuem9y\r\n\r\n', True, 'Authorization is valid')
+2024-07-14 11:45:10,282 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 11:45:10,283 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 11:45:10,283 - app.decorators.decorators - INFO - Request: ('GET /sample_get HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', True, 'Request is valid')
+2024-07-14 11:45:10,283 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 11:45:10,487 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 11:45:10,487 - app.decorators.decorators - INFO - Request: ('GET /needs_auth HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\nAuthorization: Basic V3Jvbmc6QXV0aA==\r\n\r\n', False, 'Authorization Error: Invalid Basic authentication credentials')
+2024-07-14 11:45:10,487 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 11:45:10,488 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 11:45:10,488 - app.decorators.decorators - INFO - Request: ('GIBBERISH / HTTP/1.1\r\nHost: {self.HOST}\r\nConnection: close\r\n\r\n', False, 'Server only accepts GET and POST requests')
+2024-07-14 11:45:10,489 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 11:45:10,489 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 11:45:10,490 - app.decorators.decorators - INFO - Request: ('POST /sample_post HTTP/1.1\r\nHost: 127.0.0.1\r\nContent-Type: application/json\r\nContent-Length: 16\r\nConnection: close\r\n\r\n{"key": "value"}', True, 'Request is valid')
+2024-07-14 11:45:10,490 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 11:45:10,491 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 11:45:10,491 - app.decorators.decorators - INFO - Request: ('GET /sample_post HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', False, 'Route not found')
+2024-07-14 11:45:10,491 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 11:45:10,597 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 11:45:10,597 - app.decorators.decorators - INFO - Request: ('GET /sample_post HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', False, 'Route not found')
+2024-07-14 11:45:10,597 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 11:45:10,703 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 11:45:10,703 - app.decorators.decorators - INFO - Request: ('GET /sample_post HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', False, 'Route not found')
+2024-07-14 11:45:10,703 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 11:45:10,810 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 11:45:10,810 - app.decorators.decorators - INFO - Request: ('GET /sample_post HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', False, 'Route not found')
+2024-07-14 11:45:10,810 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 11:45:10,916 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 11:45:10,917 - app.decorators.decorators - INFO - Request: ('GET /sample_post HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', False, 'Route not found')
+2024-07-14 11:45:10,917 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 11:45:11,023 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 11:45:11,024 - app.decorators.decorators - INFO - Request: ('GET /sample_post HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', False, 'Route not found')
+2024-07-14 11:45:11,024 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 11:45:11,131 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 11:45:11,131 - app.decorators.decorators - INFO - Request: ('GET /sample_post HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', False, 'Route not found')
+2024-07-14 11:45:11,132 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 11:45:11,239 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 11:45:11,239 - app.decorators.decorators - INFO - Request: ('GET /sample_post HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', False, 'Route not found')
+2024-07-14 11:45:11,239 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 11:45:11,341 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 11:45:11,341 - app.decorators.decorators - INFO - Request: ('GET /sample_post HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', False, 'Route not found')
+2024-07-14 11:45:11,341 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 11:45:11,447 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 11:45:11,448 - app.decorators.decorators - INFO - Request: ('GET /sample_post HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', False, 'Route not found')
+2024-07-14 11:45:11,448 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 11:45:59,057 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 11:45:59,057 - app.decorators.decorators - INFO - Request: ('GET /needs_auth HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\nAuthorization: Basic SGFzc2FuOkFuem9y\r\n\r\n', True, 'Authorization is valid')
+2024-07-14 11:45:59,057 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 11:45:59,057 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 11:45:59,058 - app.decorators.decorators - INFO - Request: ('GET /sample_get HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', True, 'Request is valid')
+2024-07-14 11:45:59,058 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 11:45:59,261 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 11:45:59,262 - app.decorators.decorators - INFO - Request: ('GET /needs_auth HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\nAuthorization: Basic V3Jvbmc6QXV0aA==\r\n\r\n', False, 'Authorization Error: Invalid Basic authentication credentials')
+2024-07-14 11:45:59,262 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 11:45:59,263 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 11:45:59,264 - app.decorators.decorators - INFO - Request: ('GIBBERISH / HTTP/1.1\r\nHost: {self.HOST}\r\nConnection: close\r\n\r\n', False, 'Server only accepts GET and POST requests')
+2024-07-14 11:45:59,264 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 11:45:59,265 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 11:45:59,265 - app.decorators.decorators - INFO - Request: ('POST /sample_post HTTP/1.1\r\nHost: 127.0.0.1\r\nContent-Type: application/json\r\nContent-Length: 16\r\nConnection: close\r\n\r\n{"key": "value"}', True, 'Request is valid')
+2024-07-14 11:45:59,265 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 11:45:59,267 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 11:45:59,267 - app.decorators.decorators - INFO - Request: ('GET /sample_post HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', False, 'Route not found')
+2024-07-14 11:45:59,267 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 11:45:59,375 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 11:45:59,376 - app.decorators.decorators - INFO - Request: ('GET /sample_post HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', False, 'Route not found')
+2024-07-14 11:45:59,376 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 11:45:59,481 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 11:45:59,482 - app.decorators.decorators - INFO - Request: ('GET /sample_post HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', False, 'Route not found')
+2024-07-14 11:45:59,482 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 11:45:59,589 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 11:45:59,589 - app.decorators.decorators - INFO - Request: ('GET /sample_post HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', False, 'Route not found')
+2024-07-14 11:45:59,589 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 11:45:59,695 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 11:45:59,695 - app.decorators.decorators - INFO - Request: ('GET /sample_post HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', False, 'Route not found')
+2024-07-14 11:45:59,696 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 11:45:59,802 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 11:45:59,802 - app.decorators.decorators - INFO - Request: ('GET /sample_post HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', False, 'Route not found')
+2024-07-14 11:45:59,802 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 11:45:59,907 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 11:45:59,908 - app.decorators.decorators - INFO - Request: ('GET /sample_post HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', False, 'Route not found')
+2024-07-14 11:45:59,908 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 11:46:00,011 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 11:46:00,011 - app.decorators.decorators - INFO - Request: ('GET /sample_post HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', False, 'Route not found')
+2024-07-14 11:46:00,012 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 11:46:00,117 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 11:46:00,117 - app.decorators.decorators - INFO - Request: ('GET /sample_post HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', False, 'Route not found')
+2024-07-14 11:46:00,117 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 11:46:00,224 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 11:46:00,224 - app.decorators.decorators - INFO - Request: ('GET /sample_post HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', False, 'Route not found')
+2024-07-14 11:46:00,225 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 11:47:28,070 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 11:47:28,071 - app.decorators.decorators - INFO - Request: ('GET /sample_post HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', False, 'Route not found')
+2024-07-14 11:47:28,071 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 11:47:28,176 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 11:47:28,177 - app.decorators.decorators - INFO - Request: ('GET /sample_post HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', False, 'Route not found')
+2024-07-14 11:47:28,177 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 11:47:28,283 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 11:47:28,283 - app.decorators.decorators - INFO - Request: ('GET /sample_post HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', False, 'Route not found')
+2024-07-14 11:47:28,284 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 11:47:28,386 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 11:47:28,387 - app.decorators.decorators - INFO - Request: ('GET /sample_post HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', False, 'Route not found')
+2024-07-14 11:47:28,387 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 11:47:28,494 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 11:47:28,494 - app.decorators.decorators - INFO - Request: ('GET /sample_post HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', False, 'Route not found')
+2024-07-14 11:47:28,494 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 11:47:28,600 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 11:47:28,601 - app.decorators.decorators - INFO - Request: ('GET /sample_post HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', False, 'Route not found')
+2024-07-14 11:47:28,601 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 11:47:28,704 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 11:47:28,705 - app.decorators.decorators - INFO - Request: ('GET /sample_post HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', False, 'Route not found')
+2024-07-14 11:47:28,705 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 11:47:28,811 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 11:47:28,811 - app.decorators.decorators - INFO - Request: ('GET /sample_post HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', False, 'Route not found')
+2024-07-14 11:47:28,811 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 11:47:28,917 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 11:47:28,918 - app.decorators.decorators - INFO - Request: ('GET /sample_post HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', False, 'Route not found')
+2024-07-14 11:47:28,918 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 11:47:29,024 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 11:47:29,025 - app.decorators.decorators - INFO - Request: ('GET /sample_post HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', False, 'Route not found')
+2024-07-14 11:47:29,025 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 11:47:29,131 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 11:47:29,131 - app.decorators.decorators - INFO - Request: ('GET /sample_post HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', False, 'Route not found')
+2024-07-14 11:47:29,131 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 11:47:29,237 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 11:47:29,237 - app.decorators.decorators - INFO - Request: ('GET /sample_post HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', False, 'Route not found')
+2024-07-14 11:47:29,237 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 11:47:29,343 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 11:47:29,344 - app.decorators.decorators - INFO - Request: ('GET /sample_post HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', False, 'Route not found')
+2024-07-14 11:47:29,344 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 11:47:29,451 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 11:47:29,451 - app.decorators.decorators - INFO - Request: ('GET /sample_post HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', False, 'Route not found')
+2024-07-14 11:47:29,452 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 11:47:29,558 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 11:47:29,559 - app.decorators.decorators - INFO - Request: ('GET /sample_post HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', False, 'Route not found')
+2024-07-14 11:47:29,559 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 11:48:42,612 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 11:48:42,612 - app.decorators.decorators - INFO - Request: ('GET /needs_auth HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\nAuthorization: Basic SGFzc2FuOkFuem9y\r\n\r\n', True, 'Authorization is valid')
+2024-07-14 11:48:42,612 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 11:48:42,613 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 11:48:42,613 - app.decorators.decorators - INFO - Request: ('GET /sample_get HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', True, 'Request is valid')
+2024-07-14 11:48:42,613 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 11:48:42,816 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 11:48:42,817 - app.decorators.decorators - INFO - Request: ('GET /needs_auth HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\nAuthorization: Basic V3Jvbmc6QXV0aA==\r\n\r\n', False, 'Authorization Error: Invalid Basic authentication credentials')
+2024-07-14 11:48:42,817 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 11:48:42,818 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 11:48:42,818 - app.decorators.decorators - INFO - Request: ('GIBBERISH / HTTP/1.1\r\nHost: {self.HOST}\r\nConnection: close\r\n\r\n', False, 'Server only accepts GET and POST requests')
+2024-07-14 11:48:42,819 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 11:48:42,820 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 11:48:42,820 - app.decorators.decorators - INFO - Request: ('POST /sample_post HTTP/1.1\r\nHost: 127.0.0.1\r\nContent-Type: application/json\r\nContent-Length: 16\r\nConnection: close\r\n\r\n{"key": "value"}', True, 'Request is valid')
+2024-07-14 11:48:42,820 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 11:48:42,821 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 11:48:42,821 - app.decorators.decorators - INFO - Request: ('GET /sample_get HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', True, 'Request is valid')
+2024-07-14 11:48:42,821 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 11:49:34,782 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 11:49:34,782 - app.decorators.decorators - INFO - Request: ('GET /needs_auth HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\nAuthorization: Basic SGFzc2FuOkFuem9y\r\n\r\n', True, 'Authorization is valid')
+2024-07-14 11:49:34,782 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 11:49:34,783 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 11:49:34,783 - app.decorators.decorators - INFO - Request: ('GET /sample_get HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', True, 'Request is valid')
+2024-07-14 11:49:34,783 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 11:49:34,986 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 11:49:34,987 - app.decorators.decorators - INFO - Request: ('GET /needs_auth HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\nAuthorization: Basic V3Jvbmc6QXV0aA==\r\n\r\n', False, 'Authorization Error: Invalid Basic authentication credentials')
+2024-07-14 11:49:34,987 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 11:49:34,988 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 11:49:34,988 - app.decorators.decorators - INFO - Request: ('GIBBERISH / HTTP/1.1\r\nHost: {self.HOST}\r\nConnection: close\r\n\r\n', False, 'Server only accepts GET and POST requests')
+2024-07-14 11:49:34,988 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 11:49:34,989 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 11:49:34,989 - app.decorators.decorators - INFO - Request: ('POST /sample_post HTTP/1.1\r\nHost: 127.0.0.1\r\nContent-Type: application/json\r\nContent-Length: 16\r\nConnection: close\r\n\r\n{"key": "value"}', True, 'Request is valid')
+2024-07-14 11:49:34,989 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 11:49:34,990 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 11:49:34,990 - app.decorators.decorators - INFO - Request: ('GET /sample_get HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', True, 'Request is valid')
+2024-07-14 11:49:34,990 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 11:51:05,660 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 11:51:05,660 - app.decorators.decorators - INFO - Request: ('GET /needs_auth HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\nAuthorization: Basic SGFzc2FuOkFuem9y\r\n\r\n', True, 'Authorization is valid')
+2024-07-14 11:51:05,660 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 11:51:05,661 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 11:51:05,661 - app.decorators.decorators - INFO - Request: ('GET /sample_get HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', True, 'Request is valid')
+2024-07-14 11:51:05,661 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 11:51:05,864 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 11:51:05,864 - app.decorators.decorators - INFO - Request: ('GET /needs_auth HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\nAuthorization: Basic V3Jvbmc6QXV0aA==\r\n\r\n', False, 'Authorization Error: Invalid Basic authentication credentials')
+2024-07-14 11:51:05,865 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 11:51:05,866 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 11:51:05,866 - app.decorators.decorators - INFO - Request: ('GIBBERISH / HTTP/1.1\r\nHost: {self.HOST}\r\nConnection: close\r\n\r\n', False, 'Server only accepts GET and POST requests')
+2024-07-14 11:51:05,866 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 11:51:05,866 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 11:51:05,867 - app.decorators.decorators - INFO - Request: ('POST /sample_post HTTP/1.1\r\nHost: 127.0.0.1\r\nContent-Type: application/json\r\nContent-Length: 16\r\nConnection: close\r\n\r\n{"key": "value"}', True, 'Request is valid')
+2024-07-14 11:51:05,867 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 11:51:05,867 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 11:51:05,867 - app.decorators.decorators - INFO - Request: ('GET /sample_get HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', True, 'Request is valid')
+2024-07-14 11:51:05,868 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 11:52:40,330 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 11:52:40,331 - app.decorators.decorators - INFO - Request: ('GET /needs_auth HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\nAuthorization: Basic SGFzc2FuOkFuem9y\r\n\r\n', True, 'Authorization is valid')
+2024-07-14 11:52:40,331 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 11:52:40,331 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 11:52:40,331 - app.decorators.decorators - INFO - Request: ('GET /sample_get HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', True, 'Request is valid')
+2024-07-14 11:52:40,331 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 11:52:40,534 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 11:52:40,534 - app.decorators.decorators - INFO - Request: ('GET /needs_auth HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\nAuthorization: Basic V3Jvbmc6QXV0aA==\r\n\r\n', False, 'Authorization Error: Invalid Basic authentication credentials')
+2024-07-14 11:52:40,534 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 11:52:40,535 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 11:52:40,535 - app.decorators.decorators - INFO - Request: ('GIBBERISH / HTTP/1.1\r\nHost: {self.HOST}\r\nConnection: close\r\n\r\n', False, 'Server only accepts GET and POST requests')
+2024-07-14 11:52:40,535 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 11:52:40,536 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 11:52:40,536 - app.decorators.decorators - INFO - Request: ('POST /sample_post HTTP/1.1\r\nHost: 127.0.0.1\r\nContent-Type: application/json\r\nContent-Length: 16\r\nConnection: close\r\n\r\n{"key": "value"}', True, 'Request is valid')
+2024-07-14 11:52:40,536 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 11:52:40,537 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 11:52:40,537 - app.decorators.decorators - INFO - Request: ('GET /sample_get HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', True, 'Request is valid')
+2024-07-14 11:52:40,537 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 11:57:48,712 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 11:57:48,712 - app.decorators.decorators - INFO - Request: GET /some/route HTTP/1.1
+Host: hassan.com
+2024-07-14 11:57:48,712 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 12:40:30,489 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 12:40:30,489 - app.decorators.decorators - INFO - Request: GET /some/route HTTP/1.1
+Host: hassan.com
+2024-07-14 12:40:30,489 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 12:41:44,850 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 12:41:44,850 - app.decorators.decorators - INFO - Request: GET /some/route HTTP/1.1
+Host: hassan.com
+2024-07-14 12:41:44,850 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 12:41:51,098 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 12:41:51,098 - app.decorators.decorators - INFO - Request: GET /some/route HTTP/1.1
+Host: hassan.com
+2024-07-14 12:41:51,098 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 12:42:22,000 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 12:42:22,000 - app.decorators.decorators - INFO - Request: GET /some/route HTTP/1.1
+Host: hassan.com
+2024-07-14 12:42:22,000 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 12:42:41,512 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 12:42:41,512 - app.decorators.decorators - INFO - Request: GET /some/route HTTP/1.1
+Host: hassan.com
+2024-07-14 12:42:41,512 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 12:42:48,500 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 12:42:48,500 - app.decorators.decorators - INFO - Request: GET /some/route HTTP/1.1
+Host: hassan.com
+2024-07-14 12:42:48,500 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 12:45:19,466 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 12:45:19,466 - app.decorators.decorators - INFO - Request: GET /some/route HTTP/1.1
+Host: hassan.com
+2024-07-14 12:45:19,466 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 12:46:35,102 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 12:46:35,102 - app.decorators.decorators - INFO - Request: GET /some/route HTTP/1.1
+Host: hassan.com
+2024-07-14 12:46:35,102 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 12:46:37,879 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 12:46:37,879 - app.decorators.decorators - INFO - Request: GET /some/route HTTP/1.1
+Host: hassan.com
+2024-07-14 12:46:37,879 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 12:49:28,457 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 12:49:28,458 - app.decorators.decorators - INFO - Request: GET /some/route HTTP/1.1
+Host: hassan.com
+2024-07-14 12:49:28,458 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 12:49:53,610 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 12:49:53,610 - app.decorators.decorators - INFO - Request: GET /some/route HTTP/1.1
+Host: hassan.com
+2024-07-14 12:49:53,610 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 12:50:13,003 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 12:50:13,003 - app.decorators.decorators - INFO - Request: GET /some/route HTTP/1.1
+Host: hassan.com
+2024-07-14 12:50:13,003 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 12:50:50,914 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 12:50:50,914 - app.decorators.decorators - INFO - Request: GET /some/route HTTP/1.1
+Host: hassan.com
+2024-07-14 12:50:50,914 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 12:51:22,128 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 12:51:22,128 - app.decorators.decorators - INFO - Request: GET /some/route HTTP/1.1
+Host: hassan.com
+2024-07-14 12:51:22,128 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 12:52:24,059 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 12:52:24,059 - app.decorators.decorators - INFO - Request: GET /some/route HTTP/1.1
+Host: hassan.com
+2024-07-14 12:52:24,059 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 12:52:34,913 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 12:52:34,913 - app.decorators.decorators - INFO - Request: GET /some/route HTTP/1.1
+Host: hassan.com
+2024-07-14 12:52:34,913 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 12:52:43,172 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 12:52:43,172 - app.decorators.decorators - INFO - Request: GET /some/route HTTP/1.1
+Host: hassan.com
+2024-07-14 12:52:43,172 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 12:56:09,044 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 12:56:09,044 - app.decorators.decorators - INFO - Request: GET /some/route HTTP/1.1
+Host: hassan.com
+2024-07-14 12:56:09,044 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 12:56:09,145 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 12:56:09,145 - app.decorators.decorators - INFO - Request: ('GET /needs_auth HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\nAuthorization: Basic SGFzc2FuOkFuem9y\r\n\r\n', True, 'Authorization is valid')
+2024-07-14 12:56:09,145 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 12:56:09,146 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 12:56:09,146 - app.decorators.decorators - INFO - Request: ('GET /sample_get HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', True, 'Request is valid')
+2024-07-14 12:56:09,146 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 12:56:09,349 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 12:56:09,349 - app.decorators.decorators - INFO - Request: ('GET /needs_auth HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\nAuthorization: Basic V3Jvbmc6QXV0aA==\r\n\r\n', False, 'Authorization Error: Invalid Basic authentication credentials')
+2024-07-14 12:56:09,349 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 12:56:09,350 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 12:56:09,350 - app.decorators.decorators - INFO - Request: ('GIBBERISH / HTTP/1.1\r\nHost: {self.HOST}\r\nConnection: close\r\n\r\n', False, 'Server only accepts GET and POST requests')
+2024-07-14 12:56:09,351 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 12:56:09,351 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 12:56:09,351 - app.decorators.decorators - INFO - Request: ('POST /sample_post HTTP/1.1\r\nHost: 127.0.0.1\r\nContent-Type: application/json\r\nContent-Length: 16\r\nConnection: close\r\n\r\n{"key": "value"}', True, 'Request is valid')
+2024-07-14 12:56:09,351 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 12:56:09,352 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 12:56:09,352 - app.decorators.decorators - INFO - Request: ('GET /sample_get HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', True, 'Request is valid')
+2024-07-14 12:56:09,352 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 12:57:04,614 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 12:57:04,614 - app.decorators.decorators - INFO - Request: GET /some/route HTTP/1.1
+Host: hassan.com
+2024-07-14 12:57:04,614 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 12:57:04,695 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 12:57:04,695 - app.decorators.decorators - INFO - Request: ('GET /needs_auth HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\nAuthorization: Basic SGFzc2FuOkFuem9y\r\n\r\n', True, 'Authorization is valid')
+2024-07-14 12:57:04,695 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 12:57:04,695 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 12:57:04,695 - app.decorators.decorators - INFO - Request: ('GET /sample_get HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', True, 'Request is valid')
+2024-07-14 12:57:04,695 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 12:57:04,899 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 12:57:04,899 - app.decorators.decorators - INFO - Request: ('GET /needs_auth HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\nAuthorization: Basic V3Jvbmc6QXV0aA==\r\n\r\n', False, 'Authorization Error: Invalid Basic authentication credentials')
+2024-07-14 12:57:04,899 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 12:57:04,901 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 12:57:04,901 - app.decorators.decorators - INFO - Request: ('GIBBERISH / HTTP/1.1\r\nHost: {self.HOST}\r\nConnection: close\r\n\r\n', False, 'Server only accepts GET and POST requests')
+2024-07-14 12:57:04,901 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 12:57:04,902 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 12:57:04,902 - app.decorators.decorators - INFO - Request: ('POST /sample_post HTTP/1.1\r\nHost: 127.0.0.1\r\nContent-Type: application/json\r\nContent-Length: 16\r\nConnection: close\r\n\r\n{"key": "value"}', True, 'Request is valid')
+2024-07-14 12:57:04,902 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 12:57:04,903 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 12:57:04,903 - app.decorators.decorators - INFO - Request: ('GET /sample_get HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', True, 'Request is valid')
+2024-07-14 12:57:04,903 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 13:03:19,844 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 13:03:19,845 - app.decorators.decorators - INFO - Request: ('GET /sample_get HTTP/1.1\r\nHost: 127.0.0.1:8081\r\nUser-Agent: curl/8.6.0\r\nAccept: */*\r\n\r\n', True, 'Request is valid')
+2024-07-14 13:03:19,845 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 13:04:32,482 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 13:04:32,482 - app.decorators.decorators - INFO - Request: ('GET /sample_get HTTP/1.1\r\nHost: 127.0.0.1:8081\r\nUser-Agent: curl/8.6.0\r\nAccept: */*\r\n\r\n', True, 'Request is valid')
+2024-07-14 13:04:32,482 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 13:05:37,779 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 13:05:37,780 - app.decorators.decorators - INFO - Request: ('POST /sample_post HTTP/1.1\r\nHost: 127.0.0.1:8081\r\nUser-Agent: curl/8.6.0\r\nAccept: */*\r\n\r\n', True, 'Request is valid')
+2024-07-14 13:05:37,780 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 13:06:13,171 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 13:06:13,171 - app.decorators.decorators - INFO - Request: ('GET /sample_post HTTP/1.1\r\nHost: 127.0.0.1:8081\r\nUser-Agent: curl/8.6.0\r\nAccept: */*\r\nAuthorization: Bearer pwc_is_the_best_of_the_top4\r\n\r\n', False, 'Route not found')
+2024-07-14 13:06:13,171 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 13:06:25,433 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 13:06:25,433 - app.decorators.decorators - INFO - Request: ('GET /needs_auth HTTP/1.1\r\nHost: 127.0.0.1:8081\r\nUser-Agent: curl/8.6.0\r\nAccept: */*\r\nAuthorization: Bearer pwc_is_the_best_of_the_top4\r\n\r\n', False, 'Authorization Error: Invalid Bearer token')
+2024-07-14 13:06:25,433 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 13:06:52,893 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 13:06:52,893 - app.decorators.decorators - INFO - Request: ('GET /needs_auth HTTP/1.1\r\nHost: 127.0.0.1:8081\r\nUser-Agent: curl/8.6.0\r\nAccept: */*\r\nAuthorization: Bearer pwc_is_the_best_of_the_top_4\r\n\r\n', True, 'Authorization is valid')
+2024-07-14 13:06:52,893 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 13:07:59,233 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 13:07:59,233 - app.decorators.decorators - INFO - Request: GET /some/route HTTP/1.1
+Host: hassan.com
+2024-07-14 13:07:59,233 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 13:07:59,322 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 13:07:59,322 - app.decorators.decorators - INFO - Request: ('GET /needs_auth HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\nAuthorization: Basic SGFzc2FuOkFuem9y\r\n\r\n', True, 'Authorization is valid')
+2024-07-14 13:07:59,322 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 13:07:59,323 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 13:07:59,323 - app.decorators.decorators - INFO - Request: ('GET /sample_get HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', True, 'Request is valid')
+2024-07-14 13:07:59,323 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 13:07:59,727 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 13:07:59,727 - app.decorators.decorators - INFO - Request: ('GET /needs_auth HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\nAuthorization: Basic V3Jvbmc6QXV0aA==\r\n\r\n', False, 'Authorization Error: Invalid Basic authentication credentials')
+2024-07-14 13:07:59,727 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 13:07:59,729 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 13:07:59,729 - app.decorators.decorators - INFO - Request: ('GIBBERISH / HTTP/1.1\r\nHost: {self.HOST}\r\nConnection: close\r\n\r\n', False, 'Server only accepts GET and POST requests')
+2024-07-14 13:07:59,730 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 13:07:59,731 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 13:07:59,731 - app.decorators.decorators - INFO - Request: ('POST /sample_post HTTP/1.1\r\nHost: 127.0.0.1\r\nContent-Type: application/json\r\nContent-Length: 16\r\nConnection: close\r\n\r\n{"key": "value"}', True, 'Request is valid')
+2024-07-14 13:07:59,731 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 13:07:59,732 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 13:07:59,732 - app.decorators.decorators - INFO - Request: ('GET /sample_post HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', False, 'Route not found')
+2024-07-14 13:07:59,732 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 13:07:59,839 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 13:07:59,839 - app.decorators.decorators - INFO - Request: ('GET /sample_post HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', False, 'Route not found')
+2024-07-14 13:07:59,839 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 13:07:59,944 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 13:07:59,944 - app.decorators.decorators - INFO - Request: ('GET /sample_post HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', False, 'Route not found')
+2024-07-14 13:07:59,944 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 13:08:00,051 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 13:08:00,051 - app.decorators.decorators - INFO - Request: ('GET /sample_post HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', False, 'Route not found')
+2024-07-14 13:08:00,051 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 13:08:00,153 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 13:08:00,153 - app.decorators.decorators - INFO - Request: ('GET /sample_post HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', False, 'Route not found')
+2024-07-14 13:08:00,153 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 13:08:00,260 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 13:08:00,260 - app.decorators.decorators - INFO - Request: ('GET /sample_post HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', False, 'Route not found')
+2024-07-14 13:08:00,260 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 13:08:00,362 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 13:08:00,362 - app.decorators.decorators - INFO - Request: ('GET /sample_post HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', False, 'Route not found')
+2024-07-14 13:08:00,362 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 13:08:00,468 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 13:08:00,468 - app.decorators.decorators - INFO - Request: ('GET /sample_post HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', False, 'Route not found')
+2024-07-14 13:08:00,468 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 13:08:00,571 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 13:08:00,571 - app.decorators.decorators - INFO - Request: ('GET /sample_post HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', False, 'Route not found')
+2024-07-14 13:08:00,571 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 13:08:00,676 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 13:08:00,677 - app.decorators.decorators - INFO - Request: ('GET /sample_post HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', False, 'Route not found')
+2024-07-14 13:08:00,677 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 13:10:09,878 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 13:10:09,879 - app.decorators.decorators - INFO - Request: GET /some/route HTTP/1.1
+Host: hassan.com
+2024-07-14 13:10:09,879 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 13:10:09,979 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 13:10:09,979 - app.decorators.decorators - INFO - Request: ('GET /sample_get HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', True, 'Request is valid')
+2024-07-14 13:10:09,979 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 13:10:10,382 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 13:10:10,383 - app.decorators.decorators - INFO - Request: ('POST /sample_post HTTP/1.1\r\nHost: 127.0.0.1\r\nContent-Type: application/json\r\nContent-Length: 16\r\nConnection: close\r\n\r\n{"key": "value"}', True, 'Request is valid')
+2024-07-14 13:10:10,383 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 13:10:10,385 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 13:10:10,385 - app.decorators.decorators - INFO - Request: ('GET /needs_auth HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\nAuthorization: Basic V3Jvbmc6QXV0aA==\r\n\r\n', False, 'Authorization Error: Invalid Basic authentication credentials')
+2024-07-14 13:10:10,385 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 13:10:10,386 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 13:10:10,386 - app.decorators.decorators - INFO - Request: ('GET /needs_auth HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\nAuthorization: Basic SGFzc2FuOkFuem9y\r\n\r\n', True, 'Authorization is valid')
+2024-07-14 13:10:10,386 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 13:10:10,387 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 13:10:10,387 - app.decorators.decorators - INFO - Request: ('GIBBERISH / HTTP/1.1\r\nHost: {self.HOST}\r\nConnection: close\r\n\r\n', False, 'Server only accepts GET and POST requests')
+2024-07-14 13:10:10,388 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 13:10:10,388 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 13:10:10,388 - app.decorators.decorators - INFO - Request: ('GET /sample_get HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', True, 'Request is valid')
+2024-07-14 13:10:10,388 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 13:11:03,298 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 13:11:03,299 - app.decorators.decorators - INFO - Request: ('GET /sample_post HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', False, 'Route not found')
+2024-07-14 13:11:03,300 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 13:11:03,403 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 13:11:03,403 - app.decorators.decorators - INFO - Request: ('GET /sample_post HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', False, 'Route not found')
+2024-07-14 13:11:03,404 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 13:11:03,510 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 13:11:03,510 - app.decorators.decorators - INFO - Request: ('GET /sample_post HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', False, 'Route not found')
+2024-07-14 13:11:03,510 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 13:11:03,616 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 13:11:03,617 - app.decorators.decorators - INFO - Request: ('GET /sample_post HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', False, 'Route not found')
+2024-07-14 13:11:03,617 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 13:11:03,718 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 13:11:03,718 - app.decorators.decorators - INFO - Request: ('GET /sample_post HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', False, 'Route not found')
+2024-07-14 13:11:03,718 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 13:11:03,821 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 13:11:03,821 - app.decorators.decorators - INFO - Request: ('GET /sample_post HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', False, 'Route not found')
+2024-07-14 13:11:03,821 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 13:11:03,923 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 13:11:03,923 - app.decorators.decorators - INFO - Request: ('GET /sample_post HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', False, 'Route not found')
+2024-07-14 13:11:03,923 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 13:11:04,029 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 13:11:04,030 - app.decorators.decorators - INFO - Request: ('GET /sample_post HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', False, 'Route not found')
+2024-07-14 13:11:04,030 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 13:11:04,133 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 13:11:04,134 - app.decorators.decorators - INFO - Request: ('GET /sample_post HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', False, 'Route not found')
+2024-07-14 13:11:04,134 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 13:11:32,164 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 13:11:32,164 - app.decorators.decorators - INFO - Request: GET /some/route HTTP/1.1
+Host: hassan.com
+2024-07-14 13:11:32,164 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 13:11:32,258 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 13:11:32,258 - app.decorators.decorators - INFO - Request: ('GET /sample_get HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', True, 'Request is valid')
+2024-07-14 13:11:32,258 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 13:11:32,461 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 13:11:32,461 - app.decorators.decorators - INFO - Request: ('POST /sample_post HTTP/1.1\r\nHost: 127.0.0.1\r\nContent-Type: application/json\r\nContent-Length: 16\r\nConnection: close\r\n\r\n{"key": "value"}', True, 'Request is valid')
+2024-07-14 13:11:32,461 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 13:11:32,463 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 13:11:32,463 - app.decorators.decorators - INFO - Request: ('GET /needs_auth HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\nAuthorization: Basic V3Jvbmc6QXV0aA==\r\n\r\n', False, 'Authorization Error: Invalid Basic authentication credentials')
+2024-07-14 13:11:32,463 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 13:11:32,464 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 13:11:32,464 - app.decorators.decorators - INFO - Request: ('GET /needs_auth HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\nAuthorization: Basic SGFzc2FuOkFuem9y\r\n\r\n', True, 'Authorization is valid')
+2024-07-14 13:11:32,464 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 13:11:32,465 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 13:11:32,465 - app.decorators.decorators - INFO - Request: ('GIBBERISH / HTTP/1.1\r\nHost: {self.HOST}\r\nConnection: close\r\n\r\n', False, 'Server only accepts GET and POST requests')
+2024-07-14 13:11:32,465 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 13:11:32,466 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 13:11:32,466 - app.decorators.decorators - INFO - Request: ('GET /sample_get HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', True, 'Request is valid')
+2024-07-14 13:11:32,466 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 13:12:24,486 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 13:12:24,487 - app.decorators.decorators - INFO - Request: ('GET /sample_post HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', False, 'Route not found')
+2024-07-14 13:12:24,487 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 13:12:24,590 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 13:12:24,590 - app.decorators.decorators - INFO - Request: ('GET /sample_post HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', False, 'Route not found')
+2024-07-14 13:12:24,590 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 13:12:24,694 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 13:12:24,695 - app.decorators.decorators - INFO - Request: ('GET /sample_post HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', False, 'Route not found')
+2024-07-14 13:12:24,695 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 13:12:24,801 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 13:12:24,801 - app.decorators.decorators - INFO - Request: ('GET /sample_post HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', False, 'Route not found')
+2024-07-14 13:12:24,801 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 13:12:24,907 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 13:12:24,907 - app.decorators.decorators - INFO - Request: ('GET /sample_post HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', False, 'Route not found')
+2024-07-14 13:12:24,907 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 13:12:25,010 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 13:12:25,010 - app.decorators.decorators - INFO - Request: ('GET /sample_post HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', False, 'Route not found')
+2024-07-14 13:12:25,010 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 13:12:25,117 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 13:12:25,117 - app.decorators.decorators - INFO - Request: ('GET /sample_post HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', False, 'Route not found')
+2024-07-14 13:12:25,117 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 13:12:25,223 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 13:12:25,223 - app.decorators.decorators - INFO - Request: ('GET /sample_post HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', False, 'Route not found')
+2024-07-14 13:12:25,224 - app.decorators.decorators - INFO - **************************************************
+2024-07-14 13:12:25,330 - app.decorators.decorators - INFO - Request Logging Started
+2024-07-14 13:12:25,331 - app.decorators.decorators - INFO - Request: ('GET /sample_post HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n', False, 'Route not found')
+2024-07-14 13:12:25,331 - app.decorators.decorators - INFO - **************************************************

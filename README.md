@@ -53,8 +53,10 @@ To test all three routes shown in the example usage code, use the following curl
 
  - GET request to /needs_auth with correct authentication:
 ```sh
-curl -H "Authorization: Basic $(echo -n 'Hassan:Anzor' | base64)" http://127.0.0.1:8080/needs_auth
+curl -H "Authorization: Basic $(echo -n '<USER>:<PASSWORD>' | base64)" http://127.0.0.1:8080/needs_auth
 ```
+where the user and the password are hardcoded in the app/request_handler/base.py file
+
  - POST request to /sample_post
 ```sh
 curl -X POST -d '{"key":"value"}' -H "Content-Type: application/json" http://127.0.0.1:8080/sample_post

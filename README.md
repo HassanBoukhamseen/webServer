@@ -33,6 +33,37 @@ if __name__ == "__main__":
 - The `needs_auth` parameter in the route decorator determines if a route requires authentication.
 - The server is run by creating an instance of the `WebServer` class and calling its `listen()` method.
 
+## Running the Server
+
+To run the server, execute the `main.py` file:
+
+```sh
+python3 main.py
+```
+
+## Running the Tests
+to run the test script, run
+```sh
+chmod +x run_test.sh
+./run_tests.sh
+```
+
+## Testing the Routes
+To test all three routes shown in the example usage code, use the following curl requests:
+
+ - GET request to /needs_auth with correct authentication:
+```sh
+curl -H "Authorization: Basic $(echo -n 'Hassan:Anzor' | base64)" http://127.0.0.1:8080/needs_auth
+```
+ - POST request to /sample_post
+```sh
+curl -X POST -d '{"key":"value"}' -H "Content-Type: application/json" http://127.0.0.1:8080/sample_post
+```
+ - GET request to /sample_get (streamed response)
+```sh
+curl -X GET http://127.0.0.1:8080/sample_get
+```
+
 ## Modules
 
 - [WebServer](https://github.com/HassanBoukhamseen/webServer/blob/main/webserver.py): Provides the main server configuration and management functionalities, including starting and stopping the server.

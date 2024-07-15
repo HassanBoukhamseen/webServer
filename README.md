@@ -1,7 +1,7 @@
-# Server Library
+# WebServer Library
 
 ## Overview
-The `WebServer` module provides a robust framework for creating and managing a web server with features such as streaming responses, asynchronous request processing, and request routing. It is designed to handle HTTP GET and POST requests efficiently, with support for request logging and authorization.
+The `WebServer` module provides a robust framework for creating and managing a web server with features such as streaming responses, asynchronous request processing, and request routing. It is designed to handle HTTP GET and POST requests, with support for request logging and authorization.
 
 ## Usage Example
 Below is an example of how to use the `WebServer` module to set up and run a web server.
